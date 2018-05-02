@@ -45,17 +45,38 @@
     border-bottom: unset; }
     #certificateModal .modal-dialog .modal-content .modal-header button {
       position: absolute;
-      right: -5%;
-      top: -1%;
+      right: -6%;
+      top: -3%;
       opacity: 1; }
       #certificateModal .modal-dialog .modal-content .modal-header button span {
         color: #fff;
         font-size: 50px; }
-  #certificateModal .modal-dialog .modal-content .modal-body img {
-    max-width: 450px;
-    width: 100%;
-    height: auto;
-    position: relative; }
+  #certificateModal .modal-dialog .modal-content .modal-body {
+    padding: 0; }
+    #certificateModal .modal-dialog .modal-content .modal-body img {
+      width: 100%;
+      height: auto;
+      position: relative; }
+
+@media (min-width: 576px) {
+  #certificateModal .modal-dialog {
+    max-width: 750px;
+    margin: 1.75rem auto; } }
+
+@media screen and (min-width: 576px) {
+  .modal {
+    text-align: center;
+    padding: 0 !important; }
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; }
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; } }
 
 nav.navbar {
   padding-top: 21px;
@@ -86,7 +107,8 @@ header {
     height: 100%;
     width: 100%; }
   header .information {
-    font-family: 'Allgidus'; }
+    font-family: 'Allgidus';
+    z-index: 10; }
     header .information__location p {
       font-size: 15px;
       font-weight: 400;
@@ -524,7 +546,8 @@ header {
       padding-bottom: 10px; }
       .certificate #carouselCertificate .carousel-inner .carousel-item div img {
         max-width: 227px;
-        height: auto; }
+        height: auto;
+        min-height: 320px; }
       .certificate #carouselCertificate .carousel-inner .carousel-item:hover {
         cursor: pointer; }
     .certificate #carouselCertificate .carousel-controls {
@@ -637,6 +660,56 @@ header {
       color: #000;
       line-height: 1.2; }
 
+.gallery {
+  background: url("../img/gallery-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 990px;
+  padding-top: 80px; }
+  .gallery h1 {
+    color: #000000;
+    font-family: "Allgidus";
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    position: relative;
+    color: #fff; }
+    .gallery h1:after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+      height: 3px;
+      width: 141px;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: -15px;
+      left: 0;
+      right: 0; }
+    .gallery h1:after {
+      background-color: #fbd301; }
+  .gallery #carouselGallery .gallery__item img {
+    height: 100%;
+    max-height: 311px; }
+  .gallery #carouselGallery .gallery__item:hover {
+    cursor: pointer; }
+  .gallery #carouselGallery .carousel-controls {
+    opacity: 1; }
+    .gallery #carouselGallery .carousel-controls.carousel-control-prev {
+      display: flex;
+      justify-content: flex-start;
+      left: -5%; }
+    .gallery #carouselGallery .carousel-controls.carousel-control-next {
+      display: flex;
+      justify-content: flex-end;
+      right: -5%; }
+    .gallery #carouselGallery .carousel-controls i {
+      color: #fff;
+      font-size: 44px; }
+      .gallery #carouselGallery .carousel-controls i.fa-caret-left {
+        padding-right: 6px; }
+      .gallery #carouselGallery .carousel-controls i.fa-caret-right {
+        padding-left: 6px; }
+
 .faq {
   background-color: #f8f8f8;
   padding-top: 85px;
@@ -703,12 +776,18 @@ footer {
       line-height: 35px;
       margin-bottom: 0;
       color: #b1b1b1; }
-    footer .footer__social a {
+    footer .footer__social__map {
       font-size: 18px;
       font-weight: bold;
       line-height: 35px;
       text-decoration: underline;
       color: #ff813d; }
+    footer .footer__social__phone {
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 35px;
+      margin-bottom: 0;
+      color: #b1b1b1; }
   footer .footer__questions {
     font-family: 'Allgidus'; }
     footer .footer__questions h2 {

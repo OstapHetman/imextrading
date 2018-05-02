@@ -15,10 +15,12 @@ header {
             left: 0;
             height: 100%;
             width: 100%;
+            // z-index: -1;
         }
     }
     .information {
         font-family: 'Allgidus';
+        z-index: 10;
         &__location {
             p {
                 font-size: 15px;

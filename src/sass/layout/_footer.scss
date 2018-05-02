@@ -27,12 +27,19 @@ footer {
             margin-bottom: 0;
             color: #b1b1b1;
         }
-        a {
+        &__map {
             font-size: 18px;
             font-weight: bold;
             line-height: 35px;
             text-decoration: underline;
             color: #ff813d;
+        }
+        &__phone {
+            font-size: 23px;
+            font-weight: bold;
+            line-height: 35px;
+            margin-bottom: 0;
+            color: #b1b1b1;
         }
     }
     .footer__questions {
