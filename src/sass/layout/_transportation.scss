@@ -1,0 +1,41 @@
+$second-text-color: #fbd301;
+.transportation {
+    padding-bottom: 100px;
+    h1 {
+        @include section-title;
+        &:after {
+            background-color: $second-text-color;
+        }
+        margin-bottom: 55px;
+    }
+    &__item {
+        padding-top: 60px;
+        img {
+            max-width: 135px;
+            height: auto;
+        }
+        &__img {
+            min-height: 135px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            font-family: 'Allgidus';
+            text-decoration: underline;
+            color: #000;
+            font-size: 30px;
+            font-weight: 400;
+        }
+        &-truck {
+            background: url('../img/truck-bg.png') no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        &-cruiser {
+            background: url('../img/cruise-bg.png') no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}

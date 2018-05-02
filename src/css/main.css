@@ -379,3 +379,92 @@ header {
     padding: 15px 50px 15px 50px;
     margin-left: auto;
     display: block; }
+
+.delivery {
+  padding-top: 60px;
+  padding-bottom: 110px;
+  font-family: 'Allgidus'; }
+  .delivery .container {
+    background: url("../img/map-bg.png") no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .delivery h1 {
+    color: #000000;
+    font-family: "Allgidus";
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    position: relative; }
+    .delivery h1:after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+      height: 3px;
+      width: 141px;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: -15px;
+      left: 0;
+      right: 0; }
+    .delivery h1:after {
+      background-color: #fbd301; }
+  .delivery h2 {
+    color: #fbd301;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    padding-top: 57px;
+    margin-bottom: 43px; }
+  .delivery p {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    color: #7a7a7a; }
+
+.transportation {
+  padding-bottom: 100px; }
+  .transportation h1 {
+    color: #000000;
+    font-family: "Allgidus";
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    position: relative;
+    margin-bottom: 55px; }
+    .transportation h1:after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+      height: 3px;
+      width: 141px;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: -15px;
+      left: 0;
+      right: 0; }
+    .transportation h1:after {
+      background-color: #fbd301; }
+  .transportation__item {
+    padding-top: 60px; }
+    .transportation__item img {
+      max-width: 135px;
+      height: auto; }
+    .transportation__item__img {
+      min-height: 135px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .transportation__item a {
+      font-family: 'Allgidus';
+      text-decoration: underline;
+      color: #000;
+      font-size: 30px;
+      font-weight: 400; }
+    .transportation__item-truck {
+      background: url("../img/truck-bg.png") no-repeat;
+      background-size: contain;
+      background-position: center; }
+    .transportation__item-cruiser {
+      background: url("../img/cruise-bg.png") no-repeat;
+      background-size: contain;
+      background-position: center; }
