@@ -334,3 +334,48 @@ header {
       visibility: visible;
       display: block;
       visibility: visible; } }
+
+.our-advantages {
+  background: url("../img/our-advantages-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 767px;
+  font-family: 'Allgidus';
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  .our-advantages h1 {
+    font-size: 60px;
+    color: #fcfcfc; }
+  .our-advantages__item {
+    padding-top: 85px; }
+  .our-advantages__number {
+    padding-right: 30px; }
+    .our-advantages__number h1 {
+      font-size: 88px;
+      color: #bebcba;
+      margin-bottom: 0; }
+  .our-advantages__text p {
+    font-size: 22px;
+    color: #f7f6f5;
+    margin-bottom: 0; }
+
+.get-our-price {
+  background-color: #fbd301;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+  .get-our-price h2 {
+    font-family: 'Allgidus';
+    font-size: 33px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0; }
+  .get-our-price button {
+    font-family: 'RoadRadio-Bold';
+    font-size: 20px;
+    background-color: #000;
+    color: #fafafa;
+    border-radius: unset;
+    text-transform: uppercase;
+    padding: 15px 50px 15px 50px;
+    margin-left: auto;
+    display: block; }

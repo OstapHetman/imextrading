@@ -1,0 +1,34 @@
+$advantages-title-color: #fcfcfc;
+$advantages-text-color:#f7f6f5;
+$advantages-number-color: #bebcba;
+.our-advantages {
+    background: url('../img/our-advantages-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 767px;
+    font-family: 'Allgidus';
+    padding-top: 55px;
+    padding-bottom: 55px;
+    h1 {
+        font-size: 60px;
+        color: $advantages-title-color;
+    }
+    &__item {
+        padding-top: 85px;
+    }
+    &__number {
+        h1 {
+            font-size: 88px;
+            color: $advantages-number-color;
+            margin-bottom: 0;
+        }
+        padding-right: 30px;
+    }
+    &__text {
+        p {
+            font-size: 22px;
+            color: $advantages-text-color;
+            margin-bottom: 0;
+        }
+    }
+}
