@@ -1,0 +1,28 @@
+$nav-items-color: #b6bdc2;
+nav.navbar {
+    padding-top: 21px;
+    padding-bottom: 40px;
+    ul {
+        li {
+            &:last-child {
+                a {
+                    &:after {
+                        content: '';
+                    }
+                }
+            }
+            a {
+                font-family: 'Allgidus';
+                font-size: 15px;
+                font-weight: bold;
+                color: $nav-items-color;
+                position: relative;
+                &:after {
+                    content: '|';
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

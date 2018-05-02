@@ -1,429 +1,336 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+@font-face {
+  font-family: "Museo0";
+  src: url("../fonts/MuseoSans/MuseoSansCyrl_0.otf") format("truetype"); }
 
-/* Sections
-     ========================================================================== */
-/**
-   * Remove the margin in all browsers (opinionated).
-   */
-body {
-  margin: 0; }
+@font-face {
+  font-family: "Museo1";
+  src: url("../fonts/MuseoSans/MuseoSansCyrl_1.otf") format("truetype"); }
 
-/**
-   * Add the correct display in IE 9-.
-   */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block; }
+@font-face {
+  font-family: "Museo2";
+  src: url("../fonts/MuseoSans/MuseoSansCyrl_2.otf") format("truetype"); }
 
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+@font-face {
+  font-family: "Museo3";
+  src: url("../fonts/MuseoSans/MuseoSansCyrl_3.otf") format("truetype"); }
 
-/* Grouping content
-     ========================================================================== */
-/**
-   * Add the correct display in IE 9-.
-   * 1. Add the correct display in IE.
-   */
-figcaption,
-figure,
-main {
-  /* 1 */
-  display: block; }
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSans/MuseoSansCyrl.otf") format("truetype"); }
 
-/**
-   * Add the correct margin in IE 8.
-   */
-figure {
-  margin: 1em 40px; }
+@font-face {
+  font-family: "Allgidus";
+  src: url("../fonts/Allgidus/Allgidus.ttf") format("truetype"); }
 
-/**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
+@font-face {
+  font-family: "RoadRadio-Black";
+  src: url("../fonts/RoadRadio/RoadRadio-Black.otf") format("truetype"); }
 
-/**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
+@font-face {
+  font-family: "RoadRadio-Bold";
+  src: url("../fonts/RoadRadio/RoadRadio-Bold.otf") format("truetype"); }
 
-/* Text-level semantics
-     ========================================================================== */
-/**
-   * 1. Remove the gray background on active links in IE 10.
-   * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
-   */
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+@font-face {
+  font-family: "RoadRadio-Light";
+  src: url("../fonts/RoadRadio/RoadRadio-Light.otf") format("truetype"); }
 
-/**
-   * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
+@font-face {
+  font-family: "RoadRadio-Thin";
+  src: url("../fonts/RoadRadio/RoadRadio-Thin.otf") format("truetype"); }
 
-/**
-   * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
-   */
-b,
-strong {
-  font-weight: inherit; }
+nav.navbar {
+  padding-top: 21px;
+  padding-bottom: 40px; }
+  nav.navbar ul li:last-child a:after {
+    content: ''; }
+  nav.navbar ul li a {
+    font-family: 'Allgidus';
+    font-size: 15px;
+    font-weight: bold;
+    color: #b6bdc2;
+    position: relative; }
+    nav.navbar ul li a:after {
+      content: '|';
+      position: absolute;
+      right: 0; }
 
-/**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
-b,
-strong {
-  font-weight: bolder; }
+header {
+  background: url("../img/header-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 950px;
+  position: relative; }
+  header canvas#space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  header .information {
+    font-family: 'Allgidus'; }
+    header .information__location p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 11.01px;
+      letter-spacing: -0.6px;
+      color: #c5c6c5; }
+    header .information__our-location a {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.77px;
+      color: #fff;
+      border: 1px solid #ff601e;
+      border-radius: 21px;
+      padding: 8px 20px 8px 20px; }
+      header .information__our-location a img {
+        padding-right: 10px;
+        max-width: 36px;
+        height: auto; }
+    header .information__contact__phone {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 11.01px;
+      letter-spacing: -0.96px;
+      margin-bottom: 15px;
+      padding-top: 8px; }
+    header .information__contact__email {
+      margin-bottom: 8px; }
+    header .information__contact__email, header .information__contact__get-call {
+      color: #ff601e;
+      font-size: 18px;
+      line-height: 11.01px;
+      letter-spacing: -0.72px; }
+    header .information__contact__get-call {
+      text-decoration: underline; }
+  header .main-header-information {
+    margin-top: 75px;
+    font-family: 'Allgidus';
+    letter-spacing: -0.68px;
+    position: relative;
+    position: relative; }
+    header .main-header-information:before {
+      content: '';
+      width: 7px;
+      height: 82%;
+      background-color: #ff601e;
+      position: absolute;
+      right: 0;
+      top: 10%; }
+    header .main-header-information:after {
+      content: '';
+      width: 7px;
+      height: 82%;
+      background-color: #ff601e;
+      position: absolute;
+      left: 0;
+      top: 10%; }
+    header .main-header-information h1 {
+      font-size: 54px;
+      color: #fff; }
+      header .main-header-information h1:before {
+        content: '';
+        width: 14%;
+        height: 7px;
+        background-color: #ff601e;
+        position: absolute;
+        right: 0;
+        top: 10%; }
+      header .main-header-information h1:after {
+        content: '';
+        width: 14%;
+        height: 7px;
+        background-color: #ff601e;
+        position: absolute;
+        left: 0;
+        top: 10%; }
+    header .main-header-information p {
+      font-size: 17px;
+      color: #c5c6c5;
+      max-width: 615px;
+      margin-bottom: 65px; }
+    header .main-header-information .btn {
+      font-family: 'Museo0';
+      font-size: 21px;
+      font-weight: 400;
+      letter-spacing: -1px;
+      background-color: #ff601e;
+      border-radius: 28px;
+      color: #fff;
+      padding: 10px 38.5px 10px 38.5px; }
+      header .main-header-information .btn:before {
+        content: '';
+        width: 35%;
+        height: 7px;
+        background-color: #ff601e;
+        position: absolute;
+        right: 0;
+        bottom: 7%; }
+      header .main-header-information .btn:after {
+        content: '';
+        width: 35%;
+        height: 7px;
+        background-color: #ff601e;
+        position: absolute;
+        left: 0;
+        bottom: 7%; }
+  header .mouse-icon {
+    margin-top: 75px; }
+    header .mouse-icon img {
+      max-width: 32px;
+      height: auto; }
+  header .our-partners {
+    padding: 23px 28px 23px 28px;
+    position: absolute;
+    bottom: -7%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0 0 12px 1px rgba(229, 225, 225, 0.73); }
+    header .our-partners__text {
+      font-family: 'Allgidus';
+      color: #ff601e;
+      position: relative; }
+      header .our-partners__text:after {
+        content: '';
+        position: absolute;
+        height: 85%;
+        width: 5px;
+        background-color: #ff601e;
+        right: -14px;
+        top: 9%; }
+      header .our-partners__text h1 {
+        font-size: 41px; }
+      header .our-partners__text h2 {
+        font-size: 26px;
+        margin-bottom: 0; }
+    header .our-partners__icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-left: 43px;
+      padding-right: 22px; }
+      header .our-partners__icons img {
+        max-width: 93px;
+        height: auto; }
 
-/**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
+.our-production {
+  min-height: 767px;
+  background-color: #fff; }
+  .our-production h1 {
+    padding-top: 117px;
+    color: #000000;
+    font-family: "Allgidus";
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    position: relative; }
+    .our-production h1:after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+      height: 3px;
+      width: 141px;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: -15px;
+      left: 0;
+      right: 0; }
+  .our-production #carouselProduction {
+    padding-top: 75px;
+    padding-bottom: 75px; }
+    .our-production #carouselProduction .carousel-inner {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .our-production #carouselProduction .carousel-inner .carousel-item div {
+        padding: 45px 14px 37px 14px;
+        max-width: 227px;
+        box-shadow: 0 0 12px rgba(244, 239, 239, 0.73); }
+        .our-production #carouselProduction .carousel-inner .carousel-item div img {
+          max-width: 65px;
+          height: auto;
+          padding-bottom: 25px; }
+        .our-production #carouselProduction .carousel-inner .carousel-item div p {
+          font-family: 'Allgidus';
+          font-size: 15px;
+          color: #130c04;
+          font-weight: bold;
+          margin-bottom: 40px; }
+        .our-production #carouselProduction .carousel-inner .carousel-item div button {
+          font-family: 'RoadRadio-Bold';
+          font-size: 15px;
+          background-color: #000;
+          color: #fff;
+          border-radius: unset;
+          text-transform: uppercase; }
+    .our-production #carouselProduction .carousel-controls {
+      opacity: 1; }
+      .our-production #carouselProduction .carousel-controls.carousel-control-prev {
+        display: flex;
+        justify-content: flex-start; }
+      .our-production #carouselProduction .carousel-controls.carousel-control-next {
+        display: flex;
+        justify-content: flex-end; }
+      .our-production #carouselProduction .carousel-controls i {
+        background-color: #000;
+        color: #fff;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        font-size: 36px; }
+        .our-production #carouselProduction .carousel-controls i.fa-caret-left {
+          padding-right: 6px; }
+        .our-production #carouselProduction .carousel-controls i.fa-caret-right {
+          padding-left: 6px; }
 
-/**
-   * Add the correct font style in Android 4.3-.
-   */
-dfn {
-  font-style: italic; }
-
-/**
-   * Add the correct background and color in IE 9-.
-   */
-mark {
-  background-color: #ff0;
-  color: #000; }
-
-/**
-   * Add the correct font size in all browsers.
-   */
-small {
-  font-size: 80%; }
-
-/**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sub {
-  bottom: -0.25em; }
-
-sup {
-  top: -0.5em; }
-
-/* Embedded content
-     ========================================================================== */
-/**
-   * Add the correct display in IE 9-.
-   */
-audio,
-video {
-  display: inline-block; }
-
-/**
-   * Add the correct display in iOS 4-7.
-   */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
-   * Remove the border on images inside links in IE 10-.
-   */
-img {
-  border-style: none; }
-
-/**
-   * Hide the overflow in IE.
-   */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* Forms
-     ========================================================================== */
-/**
-   * 1. Change the font styles in all browsers (opinionated).
-   * 2. Remove the margin in Firefox and Safari.
-   */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
-
-/**
-   * Show the overflow in IE.
-   * 1. Show the overflow in Edge.
-   */
-button,
-input {
-  /* 1 */
-  overflow: visible; }
-
-/**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
-button,
-select {
-  /* 1 */
-  text-transform: none; }
-
-/**
-   * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
-   *    controls in Android 4.
-   * 2. Correct the inability to style clickable types in iOS and Safari.
-   */
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */ }
-
-/**
-   * Remove the inner border and padding in Firefox.
-   */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-/**
-   * Restore the focus styles unset by the previous rule.
-   */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
-
-/**
-   * Correct the padding in Firefox.
-   */
-fieldset {
-  padding: 0.35em 0.75em 0.625em; }
-
-/**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
-   */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */ }
-
-/**
-   * 1. Add the correct display in IE 9-.
-   * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
-
-/**
-   * Remove the default vertical scrollbar in IE.
-   */
-textarea {
-  overflow: auto; }
-
-/**
-   * 1. Add the correct box sizing in IE 10-.
-   * 2. Remove the padding in IE 10-.
-   */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */ }
-
-/**
-   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
-   */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
-
-/* Interactive
-     ========================================================================== */
-/*
-   * Add the correct display in IE 9-.
-   * 1. Add the correct display in Edge, IE, and Firefox.
-   */
-details,
-menu {
-  display: block; }
-
-/*
-   * Add the correct display in all browsers.
-   */
-summary {
-  display: list-item; }
-
-/* Scripting
-     ========================================================================== */
-/**
-   * Add the correct display in IE 9-.
-   */
-canvas {
-  display: inline-block; }
-
-/**
-   * Add the correct display in IE.
-   */
-template {
-  display: none; }
-
-/* Hidden
-     ========================================================================== */
-/**
-   * Add the correct display in IE 10-.
-   */
-[hidden] {
-  display: none; }
-
-/*================ 
-    Media Query 
-   =============*/
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */ }
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */ }
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */ }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */ }
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */ }
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */ }
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */ }
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */ }
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */ }
+@media (min-width: 768px) {
+  .our-production {
+    /* show 3 items */
+    /* left or forward direction */
+    /* farthest right hidden item must be abso position for animations */
+    /* right or prev direction */ }
+    .our-production .carousel-inner .active,
+    .our-production .carousel-inner .active + .carousel-item,
+    .our-production .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block; }
+    .our-production .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .our-production .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .our-production .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none; }
+    .our-production .carousel-inner .carousel-item-next,
+    .our-production .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0); }
+    .our-production .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible; }
+    .our-production .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .our-production .carousel-item-next.carousel-item-left + .carousel-item,
+    .our-production .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .our-production .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible; }
+    .our-production .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible; }
+    .our-production .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .our-production .carousel-item-prev.carousel-item-right + .carousel-item,
+    .our-production .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .our-production .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible; } }

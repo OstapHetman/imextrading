@@ -1,0 +1,20 @@
+@mixin section-title {
+    color: #000000;
+    font-family: "Allgidus";
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: #000000;
+        height: 3px;
+        width: 141px;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: -15px;
+        left: 0;
+        right: 0;
+    }
+}

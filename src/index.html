@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Start Template</title>
+    <title>ImExTrading</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -20,9 +20,176 @@
 
 <body>
 
-    <!-- Start Coding Here -->
-    <h1>Welcome</h1>
-    <!-- End Coding Here -->
+    <!-- Start Header -->
+    <header>
+        <canvas id="space"></canvas>
+        <div class="container">
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Продукция</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сертификаты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Производство</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Фото</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Navigation -->
+            <div class="information d-flex justify-content-between">
+                <div class="information__location">
+                    <p>9231234, Украина г.</p>
+                    <p>Киев, ул. Саксаганского, 22</p>
+                    <div class="information__our-location">
+                        <a href="#" class="d-flex align-items-center"><img class="d-block" src="img/location-icon.png" alt="Location Icon"> Как к нам проехать?</a>
+                    </div>
+                </div>
+                <div class="information__brand">
+                    <img src="img/brand.png" alt="Brand">
+                </div>
+                <div class="information__contact text-right d-flex flex-column">
+                    <a class="information__contact__phone" href="tel:+38 (067) 637-03-27">+38 (067) 637-03-27</a>
+                    <a class="information__contact__email" href="mailto:admin@mark-lab.biz">admin@mark-lab.biz</a>
+                    <a class="information__contact__get-call" href="#">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="main-header-information text-center">
+                        <h1>Производство и продажа подсолнечного масла </h1>
+                        <p class="d-block mx-auto">текст-текст-текст- текст-текст-текст- текст-текст-текст- текст-текст-текст-текст-текст-текст- текст-текст-текст- текст-текст-текст- текст-текст-текст-текст-текст-текст- текст-текст-текст- текст-текст-текст- текст-текст-текст-</p>
+                        <button class="btn">Получить прайс</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 mx-auto mouse-icon">
+                    <a href="#">
+                        <img class="d-block mx-auto" src="img/mouse-icon.png" alt="Mouse icon">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 our-partners d-flex">
+                    <div class="our-partners__text">
+                        <h1>НАШИ</h1>
+                        <h2>ПАРТНЕРЫ</h2>
+                    </div>
+                    <div class="our-partners__icons">
+                        <img class="d-block" src="img/wordpress-logo.png" alt="Partners icon">
+                        <img class="d-block" src="img/superman-logo.png" alt="Partners icon">
+                        <img class="d-block" src="img/hp-logo.png" alt="Partners icon">
+                        <img class="d-block" src="img/burger-king-logo.png" alt="Partners icon">
+                        <img class="d-block" src="img/mac-logo.png" alt="Partners icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Section: Our Production -->
+    <section class="our-production">
+        <div class="container">
+            <h1 class="section-title text-center">Наша продукция</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="carouselProduction" class="carousel slide" data-ride="carousel" data-interval="9000">
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                            <div class="carousel-item col-md-4 col-lg-4 active">
+                                <div class="text-center mx-auto">
+                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
+                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
+                                    <button class="btn">Узнать подробнее</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4 col-lg-4">
+                                <div class="text-center mx-auto">
+                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 2">
+                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
+                                    <button class="btn">Узнать подробнее</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4 col-lg-4">
+                                <div class="text-center mx-auto">
+                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
+                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
+                                    <button class="btn">Узнать подробнее</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4 col-lg-4">
+                                <div class="text-center mx-auto">
+                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
+                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
+                                    <button class="btn">Узнать подробнее</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4 col-lg-4">
+                                <div class="text-center mx-auto">
+                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
+                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
+                                    <button class="btn">Узнать подробнее</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4 col-lg-4">
+                                <div class="text-center mx-auto">
+                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
+                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
+                                    <button class="btn">Узнать подробнее</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4 col-lg-4">
+                                <div class="text-center mx-auto">
+                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
+                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
+                                    <button class="btn">Узнать подробнее</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4 col-lg-4">
+                                <div class="text-center mx-auto">
+                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
+                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
+                                    <button class="btn">Узнать подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-controls carousel-control-prev" href="#carouselProduction" role="button" data-slide="prev">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-controls carousel-control-next text-faded" href="#carouselProduction" role="button" data-slide="next">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section: Our Production -->
 
     <!-- Latest compiled and minified JQuery -->
     <script src="js/jquery-3.3.1.min.js"></script>
