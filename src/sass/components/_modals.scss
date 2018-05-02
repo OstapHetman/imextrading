@@ -1,0 +1,29 @@
+#certificateModal {
+    .modal-dialog {
+        .modal-content {
+            background-color: unset;
+            border: unset;
+            .modal-header {
+                border-bottom: unset;
+                button {
+                    position: absolute;
+                    right: -5%;
+                    top: -1%;
+                    opacity: 1;
+                    span {
+                        color: #fff;
+                        font-size: 50px;
+                    }
+                }
+            }
+            .modal-body {
+                img {
+                    max-width: 450px;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                }
+            }
+        }
+    }
+}

@@ -17,6 +17,29 @@ $('#carouselProduction').on('slide.bs.carousel', function(e) {
         }
     }
 });
+
+// Certificate Slider
+$('#carouselCertificate').on('slide.bs.carousel', function(e) {
+
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $('.carousel-item').length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i = 0; i < it; i++) {
+            // append slides to end
+            if (e.direction == "left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            } else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});
+
+
 // Canvas stars
 var canvas;
 var context;
@@ -130,4 +153,20 @@ Star.prototype.draw = function() {
     context.fill();
 
     context.restore();
+}
+
+// Get src and set to modal
+
+const imgInModal = document.getElementById('modal-image');
+const images = document.getElementsByClassName('certificate__img');
+const lengthImg = images.length;
+
+for (let i = 0; i < lengthImg; i++) {
+
+    images[i].onclick = function() {
+        let attr = this.getAttribute('src');
+        console.log(attr);
+        imgInModal.setAttribute('src', `${attr}`);
+        console.log('Works...');
+    }
 }

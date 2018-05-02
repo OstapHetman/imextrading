@@ -38,6 +38,25 @@
   font-family: "RoadRadio-Thin";
   src: url("../fonts/RoadRadio/RoadRadio-Thin.otf") format("truetype"); }
 
+#certificateModal .modal-dialog .modal-content {
+  background-color: unset;
+  border: unset; }
+  #certificateModal .modal-dialog .modal-content .modal-header {
+    border-bottom: unset; }
+    #certificateModal .modal-dialog .modal-content .modal-header button {
+      position: absolute;
+      right: -5%;
+      top: -1%;
+      opacity: 1; }
+      #certificateModal .modal-dialog .modal-content .modal-header button span {
+        color: #fff;
+        font-size: 50px; }
+  #certificateModal .modal-dialog .modal-content .modal-body img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    position: relative; }
+
 nav.navbar {
   padding-top: 21px;
   padding-bottom: 40px; }
@@ -468,3 +487,151 @@ header {
       background: url("../img/cruise-bg.png") no-repeat;
       background-size: contain;
       background-position: center; }
+
+.certificate {
+  background: url("../img/certificate-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 530px;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+  .certificate h1 {
+    color: #000000;
+    font-family: "Allgidus";
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    position: relative;
+    color: #fff; }
+    .certificate h1:after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+      height: 3px;
+      width: 141px;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: -15px;
+      left: 0;
+      right: 0; }
+    .certificate h1:after {
+      background-color: #fbd301; }
+  .certificate #carouselCertificate {
+    padding-top: 75px;
+    padding-bottom: 75px; }
+    .certificate #carouselCertificate .carousel-inner {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .certificate #carouselCertificate .carousel-inner .carousel-item div img {
+        max-width: 227px;
+        height: auto; }
+      .certificate #carouselCertificate .carousel-inner .carousel-item:hover {
+        cursor: pointer; }
+    .certificate #carouselCertificate .carousel-controls {
+      opacity: 1; }
+      .certificate #carouselCertificate .carousel-controls.carousel-control-prev {
+        display: flex;
+        justify-content: flex-start; }
+      .certificate #carouselCertificate .carousel-controls.carousel-control-next {
+        display: flex;
+        justify-content: flex-end; }
+      .certificate #carouselCertificate .carousel-controls i {
+        color: #fff;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        font-size: 46px; }
+        .certificate #carouselCertificate .carousel-controls i.fa-caret-left {
+          padding-right: 6px; }
+        .certificate #carouselCertificate .carousel-controls i.fa-caret-right {
+          padding-left: 6px; }
+
+@media (min-width: 768px) {
+  .certificate {
+    /* show 3 items */
+    /* left or forward direction */
+    /* farthest right hidden item must be abso position for animations */
+    /* right or prev direction */ }
+    .certificate .carousel-inner .active,
+    .certificate .carousel-inner .active + .carousel-item,
+    .certificate .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block; }
+    .certificate .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .certificate .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .certificate .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none; }
+    .certificate .carousel-inner .carousel-item-next,
+    .certificate .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0); }
+    .certificate .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible; }
+    .certificate .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .certificate .carousel-item-next.carousel-item-left + .carousel-item,
+    .certificate .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .certificate .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible; }
+    .certificate .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible; }
+    .certificate .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .certificate .carousel-item-prev.carousel-item-right + .carousel-item,
+    .certificate .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .certificate .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible; } }
+
+.our-product {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .our-product h1 {
+    color: #000000;
+    font-family: "Allgidus";
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    position: relative; }
+    .our-product h1:after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+      height: 3px;
+      width: 141px;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: -15px;
+      left: 0;
+      right: 0; }
+    .our-product h1:after {
+      background-color: #fbd301; }
+  .our-product__item {
+    margin-top: 55px; }
+    .our-product__item:nth-child(-n+2) a {
+      max-width: 135px;
+      display: block;
+      margin: auto; }
+    .our-product__item img {
+      padding-bottom: 17px; }
+    .our-product__item a {
+      font-family: 'Allgidus';
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 19.01px;
+      text-decoration: underline;
+      letter-spacing: -0.88px;
+      color: #000;
+      line-height: 1.2; }

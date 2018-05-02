@@ -1,0 +1,34 @@
+$second-text-color: #fbd301;
+.our-product {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h1 {
+        @include section-title;
+        &:after {
+            background-color: $second-text-color;
+        }
+    }
+    &__item {
+        margin-top: 55px;
+        &:nth-child(-n+2) {
+            a {
+                max-width: 135px;
+                display: block;
+                margin: auto;
+            }
+        }
+        img {
+            padding-bottom: 17px;
+        }
+        a {
+            font-family: 'Allgidus';
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 19.01px;
+            text-decoration: underline;
+            letter-spacing: -0.88px;
+            color: #000;
+            line-height: 1.2;
+        }
+    }
+}
