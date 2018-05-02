@@ -597,7 +597,8 @@ header {
 
 .our-product {
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  background-color: #fafafa; }
   .our-product h1 {
     color: #000000;
     font-family: "Allgidus";
@@ -680,3 +681,53 @@ header {
           padding-top: 4px; }
     .faq #accordion .card .card-body {
       background-color: unset; }
+
+footer {
+  background-color: #f0f0f0;
+  padding-top: 50px; }
+  footer .footer__brand img {
+    max-width: 147px;
+    height: auto; }
+  footer .footer__qrcode img {
+    max-width: 115px;
+    height: auto; }
+  footer .footer__social {
+    font-family: 'Allgidus'; }
+    footer .footer__social h1 {
+      font-size: 40px;
+      font-weight: bold;
+      color: #000; }
+    footer .footer__social p {
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 35px;
+      margin-bottom: 0;
+      color: #b1b1b1; }
+    footer .footer__social a {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 35px;
+      text-decoration: underline;
+      color: #ff813d; }
+  footer .footer__questions {
+    font-family: 'Allgidus'; }
+    footer .footer__questions h2 {
+      color: #b1b1b1;
+      font-size: 25px;
+      font-weight: bold; }
+    footer .footer__questions .btn {
+      padding: 5px 25px 5px 25px;
+      border-radius: 21px;
+      border: 1px solid #ff601e;
+      color: #ff600e;
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: -1.01px;
+      background-color: unset; }
+  footer .footer__bottom {
+    padding-top: 30px;
+    padding-bottom: 12px; }
+    footer .footer__bottom p {
+      color: #b1b1b1;
+      font-size: 15px;
+      font-weight: bold; }

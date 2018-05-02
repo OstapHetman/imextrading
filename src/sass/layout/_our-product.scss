@@ -2,6 +2,7 @@ $second-text-color: #fbd301;
 .our-product {
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #fafafa;
     h1 {
         @include section-title;
         &:after {
