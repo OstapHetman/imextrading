@@ -58,6 +58,27 @@
       height: auto;
       position: relative; }
 
+#headerLocationModal .modal-content,
+#footerLocationModal .modal-content {
+  border-radius: unset;
+  font-family: 'Allgidus';
+  font-size: 16px; }
+  #headerLocationModal .modal-content .modal-header,
+  #footerLocationModal .modal-content .modal-header {
+    background-color: #fbd301;
+    color: #000; }
+
+#headerLocationModal .modal-body,
+#footerLocationModal .modal-body {
+  padding: 0; }
+  #headerLocationModal .modal-body iframe,
+  #footerLocationModal .modal-body iframe {
+    width: 100%;
+    height: 450px; }
+
+#footerLocationModal .modal-content .modal-header h5 {
+  font-size: 13px !important; }
+
 @media (min-width: 576px) {
   #certificateModal .modal-dialog {
     max-width: 750px;
@@ -81,6 +102,10 @@
 nav.navbar {
   padding-top: 21px;
   padding-bottom: 40px; }
+  nav.navbar button i {
+    color: #fff; }
+  nav.navbar button:focus {
+    outline: unset; }
   nav.navbar ul li:last-child a:after {
     content: ''; }
   nav.navbar ul li a {
@@ -93,6 +118,18 @@ nav.navbar {
       content: '|';
       position: absolute;
       right: 0; }
+
+@media screen and (max-width: 767px) {
+  nav.navbar {
+    padding: 10px 0px 10px 0px; }
+    nav.navbar .navbar-toggler {
+      padding: 0; }
+      nav.navbar .navbar-toggler i {
+        font-size: 26px; }
+    nav.navbar ul {
+      text-align: center; }
+      nav.navbar ul li a:after {
+        display: none; } }
 
 header {
   background: url("../img/header-bg.jpg") no-repeat;
@@ -108,43 +145,50 @@ header {
     width: 100%; }
   header .information {
     font-family: 'Allgidus';
-    z-index: 10; }
-    header .information__location p {
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 11.01px;
-      letter-spacing: -0.6px;
-      color: #c5c6c5; }
-    header .information__our-location a {
-      font-size: 16px;
-      font-weight: 400;
-      letter-spacing: -0.77px;
-      color: #fff;
-      border: 1px solid #ff601e;
-      border-radius: 21px;
-      padding: 8px 20px 8px 20px; }
-      header .information__our-location a img {
-        padding-right: 10px;
-        max-width: 36px;
-        height: auto; }
-    header .information__contact__phone {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 11.01px;
-      letter-spacing: -0.96px;
-      margin-bottom: 15px;
-      padding-top: 8px; }
-    header .information__contact__email {
-      margin-bottom: 8px; }
-    header .information__contact__email, header .information__contact__get-call {
-      color: #ff601e;
-      font-size: 18px;
-      line-height: 11.01px;
-      letter-spacing: -0.72px; }
-    header .information__contact__get-call {
-      text-decoration: underline; }
+    z-index: 999; }
+    header .information__location {
+      z-index: 999; }
+      header .information__location p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 11.01px;
+        letter-spacing: -0.6px;
+        color: #c5c6c5; }
+    header .information__our-location {
+      z-index: 999; }
+      header .information__our-location a {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.77px;
+        color: #fff;
+        border: 1px solid #ff601e;
+        border-radius: 21px;
+        padding: 8px 20px 8px 20px; }
+        header .information__our-location a img {
+          padding-right: 10px;
+          max-width: 36px;
+          height: auto; }
+    header .information__contact {
+      z-index: 999; }
+      header .information__contact__phone {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 11.01px;
+        letter-spacing: -0.96px;
+        margin-bottom: 15px;
+        padding-top: 8px; }
+      header .information__contact__email {
+        margin-bottom: 8px; }
+      header .information__contact__email, header .information__contact__get-call {
+        color: #ff601e;
+        font-size: 18px;
+        line-height: 11.01px;
+        letter-spacing: -0.72px; }
+      header .information__contact__get-call {
+        text-decoration: underline; }
   header .main-header-information {
+    z-index: 999;
     margin-top: 75px;
     font-family: 'Allgidus';
     letter-spacing: -0.68px;
@@ -247,6 +291,8 @@ header {
       header .our-partners__text h2 {
         font-size: 26px;
         margin-bottom: 0; }
+      header .our-partners__text .on-mobile {
+        display: none; }
     header .our-partners__icons {
       display: flex;
       justify-content: space-between;
@@ -257,6 +303,174 @@ header {
       header .our-partners__icons img {
         max-width: 93px;
         height: auto; }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header .main-header-information h1:before {
+    width: 7%; }
+  header .main-header-information h1:after {
+    width: 7%; }
+  header .main-header-information .btn:before {
+    width: 30%; }
+  header .main-header-information .btn:after {
+    width: 30%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header .information__location p {
+    font-size: 14px; }
+  header .information__brand img {
+    max-width: 140px; }
+  header .information__our-location {
+    z-index: 999; }
+    header .information__our-location a {
+      font-size: 14px;
+      padding: 8px 10px 8px 10px; }
+      header .information__our-location a img {
+        max-width: 30px; }
+  header .information__contact {
+    z-index: 999; }
+    header .information__contact__phone {
+      font-size: 16px; }
+    header .information__contact__email, header .information__contact__get-call {
+      font-size: 16px; }
+  header .main-header-information h1 {
+    font-size: 46px; }
+    header .main-header-information h1:before {
+      width: 7%; }
+    header .main-header-information h1:after {
+      width: 7%; }
+  header .main-header-information p {
+    font-size: 16px; }
+  header .main-header-information .btn {
+    font-size: 18px; }
+    header .main-header-information .btn:before {
+      width: 30%; }
+    header .main-header-information .btn:after {
+      width: 30%; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header {
+    min-height: unset; }
+    header .information__location p {
+      font-size: 12px; }
+    header .information__brand img {
+      max-width: 100px;
+      height: auto; }
+    header .information__our-location {
+      z-index: 999; }
+      header .information__our-location a {
+        font-size: 12px;
+        padding: 8px 10px 8px 10px; }
+        header .information__our-location a img {
+          max-width: 30px; }
+    header .information__contact {
+      z-index: 999;
+      text-align: center; }
+      header .information__contact__phone {
+        font-size: 12px; }
+      header .information__contact__email, header .information__contact__get-call {
+        font-size: 12px; }
+    header .main-header-information:before {
+      display: none; }
+    header .main-header-information:after {
+      display: none; }
+    header .main-header-information h1 {
+      font-size: 32px; }
+      header .main-header-information h1:before {
+        display: none; }
+      header .main-header-information h1:after {
+        display: none; }
+    header .main-header-information p {
+      font-size: 14px; }
+    header .main-header-information .btn {
+      font-size: 14px; }
+      header .main-header-information .btn:before {
+        display: none; }
+      header .main-header-information .btn:after {
+        display: none; }
+    header .our-partners__text h1 {
+      font-size: 36px; }
+    header .our-partners__text h2 {
+      font-size: 21px; }
+    header .our-partners__icons img {
+      max-width: 50px; } }
+
+@media screen and (max-width: 575px) {
+  header {
+    min-height: unset; }
+    header .information__location p {
+      font-size: 12px; }
+    header .information__brand {
+      padding-top: 0; }
+      header .information__brand img {
+        max-width: 100px;
+        height: auto; }
+    header .information__our-location {
+      z-index: 999; }
+      header .information__our-location a {
+        font-size: 12px;
+        padding: 8px 10px 8px 10px; }
+        header .information__our-location a img {
+          max-width: 30px; }
+    header .information__contact {
+      z-index: 999; }
+      header .information__contact__phone {
+        font-size: 12px; }
+      header .information__contact__email, header .information__contact__get-call {
+        font-size: 12px; }
+    header .main-header-information {
+      margin-top: 35px; }
+      header .main-header-information:before {
+        display: none; }
+      header .main-header-information:after {
+        display: none; }
+      header .main-header-information h1 {
+        font-size: 24px; }
+        header .main-header-information h1:before {
+          display: none; }
+        header .main-header-information h1:after {
+          display: none; }
+      header .main-header-information p {
+        font-size: 12px;
+        margin-bottom: 25px; }
+      header .main-header-information .btn {
+        font-size: 14px;
+        margin-bottom: 25px; }
+        header .main-header-information .btn:before {
+          display: none; }
+        header .main-header-information .btn:after {
+          display: none; }
+    header .our-partners {
+      flex-wrap: wrap;
+      justify-content: center; }
+      header .our-partners__text:after {
+        display: none; }
+      header .our-partners__text h1,
+      header .our-partners__text h2 {
+        display: none; }
+      header .our-partners__text .on-mobile {
+        display: block;
+        font-size: 28px; }
+      header .our-partners__icons {
+        padding-left: 0;
+        padding-right: 0; }
+        header .our-partners__icons img {
+          max-width: 40px; } }
+
+@media screen and (max-width: 389px) {
+  header .information {
+    flex-wrap: wrap; }
+    header .information__location {
+      order: 2;
+      text-align: center; }
+    header .information__brand {
+      order: 3;
+      padding-top: 30px !important; }
+    header .information__our-location {
+      order: 1; }
+    header .information__contact {
+      text-align: center;
+      align-self: center;
+      order: 1; } }
 
 .our-production {
   min-height: 767px;
@@ -771,7 +985,7 @@ footer {
       font-weight: bold;
       color: #000; }
     footer .footer__social p {
-      font-size: 23px;
+      font-size: 16px;
       font-weight: bold;
       line-height: 35px;
       margin-bottom: 0;
@@ -783,7 +997,7 @@ footer {
       text-decoration: underline;
       color: #ff813d; }
     footer .footer__social__phone {
-      font-size: 23px;
+      font-size: 16px;
       font-weight: bold;
       line-height: 35px;
       margin-bottom: 0;

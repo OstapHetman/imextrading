@@ -26,8 +26,8 @@
         <div class="container">
             <!-- Start Navigation -->
             <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
@@ -61,17 +61,17 @@
             <!-- End Navigation -->
             <div class="information d-flex justify-content-between">
                 <div class="information__location">
-                    <p>9231234, Украина г.</p>
-                    <p>Киев, ул. Саксаганского, 22</p>
+                    <p>Украина, Одесса, 65000</p>
+                    <p>пр. Шевченка, 4Д, офис 63</p>
                     <div class="information__our-location">
-                        <a href="#" class="d-flex align-items-center"><img class="d-block" src="img/location-icon.png" alt="Location Icon"> Как к нам проехать?</a>
+                        <a href="#" class="d-flex align-items-center" data-toggle="modal" data-target="#headerLocationModal"><img class="d-block" src="img/location-icon.png" alt="Location Icon"> Как к нам проехать?</a>
                     </div>
                 </div>
-                <div class="information__brand">
+                <div class="information__brand mx-auto mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0">
                     <img src="img/brand.png" alt="Brand">
                 </div>
-                <div class="information__contact text-right d-flex flex-column">
-                    <a class="information__contact__phone" href="tel:+38 (067) 637-03-27">+38 (067) 637-03-27</a>
+                <div class="information__contact text-center text-sm-right text-md-right text-lg-right text-xl-right d-flex flex-column">
+                    <a class="information__contact__phone" href="tel:+38 (095) 000-05-01">+38 (095) 000-05-01</a>
                     <a class="information__contact__email" href="mailto:admin@mark-lab.biz">admin@mark-lab.biz</a>
                     <a class="information__contact__get-call" href="#">Заказать звонок</a>
                 </div>
@@ -97,6 +97,7 @@
                     <div class="our-partners__text">
                         <h1>НАШИ</h1>
                         <h2>ПАРТНЕРЫ</h2>
+                        <h1 class="on-mobile">НАШИ ПАРТНЕРЫ</h1>
                     </div>
                     <div class="our-partners__icons">
                         <img class="d-block" src="img/wordpress-logo.png" alt="Partners icon">
@@ -598,9 +599,10 @@
                 </div>
                 <div class="col-lg-4 footer__social align-self-end">
                     <h1>Для связи с нами:</h1>
-                    <a class="footer__social__phone" href="tel:+38 (067) 637-03-27">+38 (067) 637-03-27</a>
-                    <p>г. Киев, ул. Саксаганского, 22</p>
-                    <a class="footer__social__map" href="#">Показать на карте адрес</a>
+                    <a class="footer__social__phone" href="tel:+38 (095) 000-05-01">+38 (095) 000-05-01</a>
+                    <p>Украина, Одесса, 65000,</p>
+                    <p> пр. Шевченка, 4Д, офис 63</p>
+                    <a class="footer__social__map" href="#" data-toggle="modal" data-target="#footerLocationModal">Еще наши адреса</a>
                 </div>
                 <div class="offset-lg-1 col-lg-3 align-self-center text-center footer__questions">
                     <h2>Остались вопросы?</h2>
@@ -632,6 +634,49 @@
         </div>
     </div>
 
+    <!-- Modal for header location -->
+    <div class="modal fade" id="headerLocationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Украина, Одесса, 65000, пр. Шевченка, 4Д, офис 63</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.458625745563!2d30.74695141597464!3d46.459422979125364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633d85e17531d%3A0x2c11f382a565e6a6!2z0L_RgNC-0YHQv9C10LrRgiDQqNC10LLRh9C10L3QutCwLCA00JQsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1suk!2sua!4v1525275916993"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for footer location -->
+    <div class="modal fade" id="footerLocationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Китай, г.Пекин ул.ChaoYang DongShanHuan 102, Офис.дом Rui An 926</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2359.4858525091363!2d116.44373004549048!3d39.92182280467455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f1abee23736947%3A0xd7bb8b3026d0813a!2zQ2hhb3lhbmcsINCf0LXQutGW0L0sINCa0LjRgtCw0Lk!5e0!3m2!1suk!2sua!4v1525276845901"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Гонконг, Unit 04,7/F,Bright Way Tower,NO. 33Mong Kok Road,Kowloon,Hong Kong Tel. ‎0082-27935511 00852-35902333 </h5>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.878167754223!2d114.16609576547008!3d22.320446935313115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400c807a04cbf%3A0x1d9075e64ae09d2c!2zQnJpZ2h0IFdheSBUb3dlciwgMzMgTW9uZyBLb2sgUmQsIE1vbmcgS29rLCDQk9C-0L3QutC-0L3Qsw!5e0!3m2!1suk!2sua!4v1525277182998"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Latest compiled and minified JQuery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

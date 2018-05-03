@@ -2,6 +2,14 @@ $nav-items-color: #b6bdc2;
 nav.navbar {
     padding-top: 21px;
     padding-bottom: 40px;
+    button {
+        i {
+            color: #fff;
+        }
+        &:focus {
+            outline: unset;
+        }
+    }
     ul {
         li {
             &:last-child {
@@ -21,6 +29,28 @@ nav.navbar {
                     content: '|';
                     position: absolute;
                     right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav.navbar {
+        padding: 10px 0px 10px 0px;
+        .navbar-toggler {
+            padding: 0;
+            i {
+                font-size: 26px;
+            }
+        }
+        ul {
+            text-align: center;
+            li {
+                a {
+                    &:after {
+                        display: none;
+                    }
                 }
             }
         }
