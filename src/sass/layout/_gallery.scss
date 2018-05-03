@@ -46,3 +46,20 @@
         }
     }
 }
+
+@media screen and (max-width: 991px) {
+    .gallery {
+        min-height: unset;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        #carouselGallery {
+            margin-top: 35px;
+            .carousel-controls.carousel-control-next {
+                right: -7%;
+            }
+            .carousel-controls.carousel-control-prev {
+                left: -7%;
+            }
+        }
+    }
+}

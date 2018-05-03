@@ -70,3 +70,181 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    footer {
+        padding-top: 30px;
+        .footer__brand {
+            img {
+                max-width: 130px;
+            }
+        }
+        .footer__qrcode {
+            img {
+                max-width: 100px;
+            }
+        }
+        .footer__social {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 14px;
+            }
+            &__map {
+                font-size: 14px;
+            }
+            &__phone {
+                font-size: 14px;
+            }
+        }
+        .footer__questions {
+            font-family: 'Allgidus';
+            h2 {
+                font-size: 18px;
+            }
+            .btn {
+                font-size: 18px;
+            }
+        }
+        .footer__bottom {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    footer {
+        padding-top: 30px;
+        .footer__brand {
+            img {
+                max-width: 100px;
+            }
+        }
+        .footer__qrcode {
+            img {
+                max-width: 80px;
+            }
+        }
+        .footer__social {
+            text-align: center;
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 14px;
+            }
+            &__map {
+                font-size: 14px;
+            }
+            &__phone {
+                font-size: 14px;
+            }
+        }
+        .footer__questions {
+            h2 {
+                font-size: 18px;
+            }
+            .btn {
+                font-size: 18px;
+            }
+        }
+        .footer__bottom {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    footer {
+        padding-top: 30px;
+        .footer__brand {
+            img {
+                max-width: 100px;
+            }
+        }
+        .footer__qrcode {
+            img {
+                max-width: 80px;
+            }
+        }
+        .footer__social {
+            margin-top: 25px;
+            text-align: center;
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 14px;
+            }
+            &__map {
+                font-size: 14px;
+            }
+            &__phone {
+                font-size: 14px;
+            }
+        }
+        .footer__questions {
+            h2 {
+                font-size: 18px;
+            }
+            .btn {
+                font-size: 18px;
+            }
+        }
+        .footer__bottom {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    footer {
+        padding-top: 30px;
+        .footer__brand {
+            img {
+                max-width: 100px;
+            }
+        }
+        .footer__qrcode {
+            img {
+                max-width: 80px;
+            }
+        }
+        .footer__social {
+            margin-top: 25px;
+            text-align: center;
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 14px;
+            }
+            &__map {
+                font-size: 14px;
+            }
+            &__phone {
+                font-size: 14px;
+            }
+        }
+        .footer__questions {
+            h2 {
+                font-size: 18px;
+            }
+            .btn {
+                font-size: 18px;
+            }
+        }
+        .footer__bottom {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

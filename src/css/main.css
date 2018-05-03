@@ -46,7 +46,7 @@
     #certificateModal .modal-dialog .modal-content .modal-header button {
       position: absolute;
       right: -6%;
-      top: -3%;
+      top: -6%;
       opacity: 1; }
       #certificateModal .modal-dialog .modal-content .modal-header button span {
         color: #fff;
@@ -79,7 +79,14 @@
 #footerLocationModal .modal-content .modal-header h5 {
   font-size: 13px !important; }
 
-@media (min-width: 576px) {
+@media (max-width: 575px) {
+  .show#certificateModal {
+    display: flex !important; }
+    .show#certificateModal .modal-dialog {
+      max-width: 90%;
+      margin: auto; } }
+
+@media (min-width: 767px) {
   #certificateModal .modal-dialog {
     max-width: 750px;
     margin: 1.75rem auto; } }
@@ -502,30 +509,32 @@ header {
   .our-production #carouselProduction {
     padding-top: 75px;
     padding-bottom: 75px; }
-    .our-production #carouselProduction .carousel-inner {
+    .our-production #carouselProduction .carousel-item-next,
+    .our-production #carouselProduction .carousel-item-prev,
+    .our-production #carouselProduction .carousel-item.active {
       padding-top: 10px;
       padding-bottom: 10px; }
-      .our-production #carouselProduction .carousel-inner .carousel-item div {
-        padding: 45px 14px 37px 14px;
-        max-width: 227px;
-        box-shadow: 0 0 12px rgba(244, 239, 239, 0.73); }
-        .our-production #carouselProduction .carousel-inner .carousel-item div img {
-          max-width: 65px;
-          height: auto;
-          padding-bottom: 25px; }
-        .our-production #carouselProduction .carousel-inner .carousel-item div p {
-          font-family: 'Allgidus';
-          font-size: 15px;
-          color: #130c04;
-          font-weight: bold;
-          margin-bottom: 40px; }
-        .our-production #carouselProduction .carousel-inner .carousel-item div button {
-          font-family: 'RoadRadio-Bold';
-          font-size: 15px;
-          background-color: #000;
-          color: #fff;
-          border-radius: unset;
-          text-transform: uppercase; }
+    .our-production #carouselProduction .carousel-inner .carousel-item div {
+      padding: 45px 14px 37px 14px;
+      max-width: 227px;
+      box-shadow: 0 0 12px rgba(244, 239, 239, 0.73); }
+      .our-production #carouselProduction .carousel-inner .carousel-item div img {
+        max-width: 65px;
+        height: auto;
+        padding-bottom: 25px; }
+      .our-production #carouselProduction .carousel-inner .carousel-item div p {
+        font-family: 'Allgidus';
+        font-size: 15px;
+        color: #130c04;
+        font-weight: bold;
+        margin-bottom: 40px; }
+      .our-production #carouselProduction .carousel-inner .carousel-item div button {
+        font-family: 'RoadRadio-Bold';
+        font-size: 15px;
+        background-color: #000;
+        color: #fff;
+        border-radius: unset;
+        text-transform: uppercase; }
     .our-production #carouselProduction .carousel-controls {
       opacity: 1; }
       .our-production #carouselProduction .carousel-controls.carousel-control-prev {
@@ -665,8 +674,10 @@ header {
     padding-top: 35px; }
   .our-advantages h1 {
     font-size: 32px; }
-  .our-advantages__number h1 {
-    font-size: 50px; }
+  .our-advantages__number {
+    padding: 0; }
+    .our-advantages__number h1 {
+      font-size: 50px; }
   .our-advantages__text {
     text-align: center; }
     .our-advantages__text p {
@@ -912,15 +923,12 @@ header {
   .certificate #carouselCertificate {
     padding-top: 75px;
     padding-bottom: 75px; }
-    .certificate #carouselCertificate .carousel-inner {
-      padding-top: 10px;
-      padding-bottom: 10px; }
-      .certificate #carouselCertificate .carousel-inner .carousel-item div img {
-        max-width: 227px;
-        height: auto;
-        min-height: 320px; }
-      .certificate #carouselCertificate .carousel-inner .carousel-item:hover {
-        cursor: pointer; }
+    .certificate #carouselCertificate .carousel-inner .carousel-item div img {
+      max-width: 227px;
+      height: auto;
+      min-height: 320px; }
+    .certificate #carouselCertificate .carousel-inner .carousel-item:hover {
+      cursor: pointer; }
     .certificate #carouselCertificate .carousel-controls {
       opacity: 1; }
       .certificate #carouselCertificate .carousel-controls.carousel-control-prev {
@@ -1124,6 +1132,18 @@ header {
       .gallery #carouselGallery .carousel-controls i.fa-caret-right {
         padding-left: 6px; }
 
+@media screen and (max-width: 991px) {
+  .gallery {
+    min-height: unset;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .gallery #carouselGallery {
+      margin-top: 35px; }
+      .gallery #carouselGallery .carousel-controls.carousel-control-next {
+        right: -7%; }
+      .gallery #carouselGallery .carousel-controls.carousel-control-prev {
+        left: -7%; } }
+
 .faq {
   background-color: #f8f8f8;
   padding-top: 85px;
@@ -1168,6 +1188,57 @@ header {
           padding-top: 4px; }
     .faq #accordion .card .card-body {
       background-color: unset; }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .faq {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .faq__title {
+      margin-top: 0;
+      text-align: center; }
+    .faq h1 {
+      font-size: 36px; }
+    .faq p {
+      font-size: 16px; } }
+
+@media screen and (max-width: 575px) {
+  .faq {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .faq__title {
+      margin-top: 0;
+      text-align: center; }
+    .faq h1 {
+      font-size: 36px; }
+    .faq p {
+      font-size: 16px; }
+    .faq #accordion .card {
+      margin-top: 25px;
+      border: unset;
+      border-radius: unset;
+      background-color: unset; }
+      .faq #accordion .card:first-child {
+        margin-top: 0; }
+      .faq #accordion .card .card-header {
+        background-color: #fbd301;
+        border: unset;
+        border-radius: unset;
+        padding: 0;
+        position: relative; }
+        .faq #accordion .card .card-header button {
+          font-size: 14px; }
+          .faq #accordion .card .card-header button i {
+            background-color: #000;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            font-size: 18px;
+            position: absolute;
+            right: 5px;
+            padding-top: 3px; }
+      .faq #accordion .card .card-body {
+        font-size: 13px;
+        text-align: justify; } }
 
 footer {
   background-color: #f0f0f0;
@@ -1224,3 +1295,101 @@ footer {
       color: #b1b1b1;
       font-size: 15px;
       font-weight: bold; }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  footer {
+    padding-top: 30px; }
+    footer .footer__brand img {
+      max-width: 130px; }
+    footer .footer__qrcode img {
+      max-width: 100px; }
+    footer .footer__social h1 {
+      font-size: 30px; }
+    footer .footer__social p {
+      font-size: 14px; }
+    footer .footer__social__map {
+      font-size: 14px; }
+    footer .footer__social__phone {
+      font-size: 14px; }
+    footer .footer__questions {
+      font-family: 'Allgidus'; }
+      footer .footer__questions h2 {
+        font-size: 18px; }
+      footer .footer__questions .btn {
+        font-size: 18px; }
+    footer .footer__bottom p {
+      font-size: 14px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+    padding-top: 30px; }
+    footer .footer__brand img {
+      max-width: 100px; }
+    footer .footer__qrcode img {
+      max-width: 80px; }
+    footer .footer__social {
+      text-align: center; }
+      footer .footer__social h1 {
+        font-size: 26px; }
+      footer .footer__social p {
+        font-size: 14px; }
+      footer .footer__social__map {
+        font-size: 14px; }
+      footer .footer__social__phone {
+        font-size: 14px; }
+    footer .footer__questions h2 {
+      font-size: 18px; }
+    footer .footer__questions .btn {
+      font-size: 18px; }
+    footer .footer__bottom p {
+      font-size: 14px; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  footer {
+    padding-top: 30px; }
+    footer .footer__brand img {
+      max-width: 100px; }
+    footer .footer__qrcode img {
+      max-width: 80px; }
+    footer .footer__social {
+      margin-top: 25px;
+      text-align: center; }
+      footer .footer__social h1 {
+        font-size: 26px; }
+      footer .footer__social p {
+        font-size: 14px; }
+      footer .footer__social__map {
+        font-size: 14px; }
+      footer .footer__social__phone {
+        font-size: 14px; }
+    footer .footer__questions h2 {
+      font-size: 18px; }
+    footer .footer__questions .btn {
+      font-size: 18px; }
+    footer .footer__bottom p {
+      font-size: 14px; } }
+
+@media screen and (max-width: 575px) {
+  footer {
+    padding-top: 30px; }
+    footer .footer__brand img {
+      max-width: 100px; }
+    footer .footer__qrcode img {
+      max-width: 80px; }
+    footer .footer__social {
+      margin-top: 25px;
+      text-align: center; }
+      footer .footer__social h1 {
+        font-size: 26px; }
+      footer .footer__social p {
+        font-size: 14px; }
+      footer .footer__social__map {
+        font-size: 14px; }
+      footer .footer__social__phone {
+        font-size: 14px; }
+    footer .footer__questions h2 {
+      font-size: 18px; }
+    footer .footer__questions .btn {
+      font-size: 18px; }
+    footer .footer__bottom p {
+      font-size: 14px; } }

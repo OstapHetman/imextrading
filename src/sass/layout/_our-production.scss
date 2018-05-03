@@ -8,9 +8,13 @@
     #carouselProduction {
         padding-top: 75px;
         padding-bottom: 75px;
-        .carousel-inner {
+        .carousel-item-next,
+        .carousel-item-prev,
+        .carousel-item.active {
             padding-top: 10px;
             padding-bottom: 10px;
+        }
+        .carousel-inner {
             .carousel-item {
                 div {
                     padding: 45px 14px 37px 14px;

@@ -9,7 +9,7 @@ $second-text-color: #fbd301;
                 button {
                     position: absolute;
                     right: -6%;
-                    top: -3%;
+                    top: -6%;
                     opacity: 1;
                     span {
                         color: #fff;
@@ -59,7 +59,19 @@ $second-text-color: #fbd301;
     }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 575px) {
+    .show#certificateModal {
+        display: flex !important;
+        .modal-dialog {
+            max-width: 90%;
+            margin: auto;
+            // margin: 1.75rem auto;
+            // top: 15%;
+        }
+    }
+}
+
+@media (min-width: 767px) {
     #certificateModal {
         .modal-dialog {
             max-width: 750px;
