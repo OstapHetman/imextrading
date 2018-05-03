@@ -496,9 +496,9 @@ header {
       right: 0; }
     @media screen and (max-width: 576px) {
       .our-production h1 {
-        font-size: 36px; }
+        font-size: 30px; }
         .our-production h1:after {
-          width: 100px; } }
+          width: 80px; } }
   .our-production #carouselProduction {
     padding-top: 75px;
     padding-bottom: 75px; }
@@ -664,7 +664,7 @@ header {
     justify-content: center;
     padding-top: 35px; }
   .our-advantages h1 {
-    font-size: 36px; }
+    font-size: 32px; }
   .our-advantages__number h1 {
     font-size: 50px; }
   .our-advantages__text {
@@ -692,6 +692,46 @@ header {
     padding: 15px 50px 15px 50px;
     margin-left: auto;
     display: block; }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .get-our-price h2 {
+    font-size: 30px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .get-our-price h2 {
+    font-size: 26px; }
+  .get-our-price button {
+    margin-left: 0;
+    padding: 15px 15px 15px 15px;
+    font-size: 16px; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .get-our-price {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .get-our-price h2 {
+      font-size: 22px;
+      text-align: center;
+      padding-bottom: 15px; }
+    .get-our-price button {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 15px 15px 15px;
+      font-size: 16px; } }
+
+@media screen and (max-width: 575px) {
+  .get-our-price {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .get-our-price h2 {
+      font-size: 18px;
+      text-align: center;
+      padding-bottom: 15px; }
+    .get-our-price button {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px 10px 10px 10px;
+      font-size: 14px; } }
 
 .delivery {
   padding-top: 60px;
@@ -721,9 +761,9 @@ header {
       right: 0; }
     @media screen and (max-width: 576px) {
       .delivery h1 {
-        font-size: 36px; }
+        font-size: 30px; }
         .delivery h1:after {
-          width: 100px; } }
+          width: 80px; } }
     .delivery h1:after {
       background-color: #fbd301; }
   .delivery h2 {
@@ -738,6 +778,26 @@ header {
     font-weight: bold;
     letter-spacing: -0.8px;
     color: #7a7a7a; }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .delivery {
+    padding-bottom: 50px; }
+    .delivery h2 {
+      font-size: 22px;
+      padding-top: 25px;
+      margin-bottom: 20px; }
+    .delivery p {
+      font-size: 16px; } }
+
+@media screen and (max-width: 575px) {
+  .delivery {
+    padding-bottom: 50px; }
+    .delivery h2 {
+      font-size: 20px;
+      padding-top: 25px;
+      margin-bottom: 20px; }
+    .delivery p {
+      font-size: 13px; } }
 
 .transportation {
   padding-bottom: 100px; }
@@ -762,9 +822,9 @@ header {
       right: 0; }
     @media screen and (max-width: 576px) {
       .transportation h1 {
-        font-size: 36px; }
+        font-size: 30px; }
         .transportation h1:after {
-          width: 100px; } }
+          width: 80px; } }
     .transportation h1:after {
       background-color: #fbd301; }
   .transportation__item {
@@ -820,9 +880,9 @@ header {
       right: 0; }
     @media screen and (max-width: 576px) {
       .certificate h1 {
-        font-size: 36px; }
+        font-size: 30px; }
         .certificate h1:after {
-          width: 100px; } }
+          width: 80px; } }
     .certificate h1:after {
       background-color: #fbd301; }
   .certificate #carouselCertificate {
@@ -929,9 +989,9 @@ header {
       right: 0; }
     @media screen and (max-width: 576px) {
       .our-product h1 {
-        font-size: 36px; }
+        font-size: 30px; }
         .our-product h1:after {
-          width: 100px; } }
+          width: 80px; } }
     .our-product h1:after {
       background-color: #fbd301; }
   .our-product__item {
@@ -979,9 +1039,9 @@ header {
       right: 0; }
     @media screen and (max-width: 576px) {
       .gallery h1 {
-        font-size: 36px; }
+        font-size: 30px; }
         .gallery h1:after {
-          width: 100px; } }
+          width: 80px; } }
     .gallery h1:after {
       background-color: #fbd301; }
   .gallery #carouselGallery .gallery__item img {
