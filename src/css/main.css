@@ -494,6 +494,11 @@ header {
       bottom: -15px;
       left: 0;
       right: 0; }
+    @media screen and (max-width: 576px) {
+      .our-production h1 {
+        font-size: 36px; }
+        .our-production h1:after {
+          width: 100px; } }
   .our-production #carouselProduction {
     padding-top: 75px;
     padding-bottom: 75px; }
@@ -540,6 +545,29 @@ header {
           padding-right: 6px; }
         .our-production #carouselProduction .carousel-controls i.fa-caret-right {
           padding-left: 6px; }
+
+@media screen and (max-width: 767px) {
+  .our-production {
+    min-height: unset; }
+    .our-production #carouselProduction {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .our-production #carouselProduction .carousel-controls i {
+        font-size: 30px;
+        width: 30px;
+        height: 30px; }
+      .our-production #carouselProduction .carousel-controls.carousel-control-prev {
+        justify-content: flex-end; }
+      .our-production #carouselProduction .carousel-controls.carousel-control-next {
+        justify-content: flex-start; }
+      .our-production #carouselProduction .carousel-inner .carousel-item div {
+        padding: 30px 10px 22px 10px; }
+        .our-production #carouselProduction .carousel-inner .carousel-item div p {
+          font-size: 14px; }
+        .our-production #carouselProduction .carousel-inner .carousel-item div button {
+          font-size: 14px; }
+        .our-production #carouselProduction .carousel-inner .carousel-item div img {
+          max-width: 40px; } }
 
 @media (min-width: 768px) {
   .our-production {
@@ -661,6 +689,11 @@ header {
       bottom: -15px;
       left: 0;
       right: 0; }
+    @media screen and (max-width: 576px) {
+      .delivery h1 {
+        font-size: 36px; }
+        .delivery h1:after {
+          width: 100px; } }
     .delivery h1:after {
       background-color: #fbd301; }
   .delivery h2 {
@@ -697,6 +730,11 @@ header {
       bottom: -15px;
       left: 0;
       right: 0; }
+    @media screen and (max-width: 576px) {
+      .transportation h1 {
+        font-size: 36px; }
+        .transportation h1:after {
+          width: 100px; } }
     .transportation h1:after {
       background-color: #fbd301; }
   .transportation__item {
@@ -750,6 +788,11 @@ header {
       bottom: -15px;
       left: 0;
       right: 0; }
+    @media screen and (max-width: 576px) {
+      .certificate h1 {
+        font-size: 36px; }
+        .certificate h1:after {
+          width: 100px; } }
     .certificate h1:after {
       background-color: #fbd301; }
   .certificate #carouselCertificate {
@@ -854,6 +897,11 @@ header {
       bottom: -15px;
       left: 0;
       right: 0; }
+    @media screen and (max-width: 576px) {
+      .our-product h1 {
+        font-size: 36px; }
+        .our-product h1:after {
+          width: 100px; } }
     .our-product h1:after {
       background-color: #fbd301; }
   .our-product__item {
@@ -899,6 +947,11 @@ header {
       bottom: -15px;
       left: 0;
       right: 0; }
+    @media screen and (max-width: 576px) {
+      .gallery h1 {
+        font-size: 36px; }
+        .gallery h1:after {
+          width: 100px; } }
     .gallery h1:after {
       background-color: #fbd301; }
   .gallery #carouselGallery .gallery__item img {

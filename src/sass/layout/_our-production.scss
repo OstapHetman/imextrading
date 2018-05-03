@@ -67,6 +67,41 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .our-production {
+        min-height: unset;
+        #carouselProduction {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .carousel-controls {
+                i {
+                    font-size: 30px;
+                    width: 30px;
+                    height: 30px;
+                }
+                &.carousel-control-prev {
+                    justify-content: flex-end;
+                }
+                &.carousel-control-next {
+                    justify-content: flex-start;
+                }
+            }
+            .carousel-inner .carousel-item div {
+                padding: 30px 10px 22px 10px;
+                p {
+                    font-size: 14px;
+                }
+                button {
+                    font-size: 14px;
+                }
+                img {
+                    max-width: 40px;
+                }
+            }
+        }
+    }
+}
+
 // Carousel
 @media (min-width: 768px) {
     .our-production {
