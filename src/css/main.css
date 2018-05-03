@@ -1042,7 +1042,9 @@ header {
       display: block;
       margin: auto; }
     .our-product__item img {
-      padding-bottom: 17px; }
+      padding-bottom: 17px;
+      max-width: 137px;
+      height: auto; }
     .our-product__item a {
       font-family: 'Allgidus';
       font-size: 22px;
@@ -1052,6 +1054,20 @@ header {
       letter-spacing: -0.88px;
       color: #000;
       line-height: 1.2; }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .our-product__item img {
+    max-width: 100px; }
+  .our-product__item a {
+    font-size: 16px; } }
+
+@media screen and (max-width: 575px) {
+  .our-product__item img {
+    max-width: 100px; }
+  .our-product__item:nth-child(-n+2) a {
+    max-width: unset; }
+  .our-product__item a {
+    font-size: 16px; } }
 
 .gallery {
   background: url("../img/gallery-bg.jpg") no-repeat;

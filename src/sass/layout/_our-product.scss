@@ -20,6 +20,8 @@ $second-text-color: #fbd301;
         }
         img {
             padding-bottom: 17px;
+            max-width: 137px;
+            height: auto;
         }
         a {
             font-family: 'Allgidus';
@@ -30,6 +32,37 @@ $second-text-color: #fbd301;
             letter-spacing: -0.88px;
             color: #000;
             line-height: 1.2;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .our-product {
+        &__item {
+            img {
+                max-width: 100px;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .our-product {
+        &__item {
+            img {
+                max-width: 100px;
+            }
+            &:nth-child(-n+2) {
+                a {
+                    max-width: unset;
+                }
+            }
+            a {
+                font-size: 16px;
+            }
         }
     }
 }
