@@ -642,6 +642,36 @@ header {
     color: #f7f6f5;
     margin-bottom: 0; }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .our-advantages h1 {
+    font-size: 50px; }
+  .our-advantages__number h1 {
+    font-size: 50px; }
+  .our-advantages__text p {
+    font-size: 16px; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .our-advantages h1 {
+    font-size: 50px; }
+  .our-advantages__number h1 {
+    font-size: 50px; }
+  .our-advantages__text p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 575px) {
+  .our-advantages__item {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 35px; }
+  .our-advantages h1 {
+    font-size: 36px; }
+  .our-advantages__number h1 {
+    font-size: 50px; }
+  .our-advantages__text {
+    text-align: center; }
+    .our-advantages__text p {
+      font-size: 16px; } }
+
 .get-our-price {
   background-color: #fbd301;
   padding-top: 45px;

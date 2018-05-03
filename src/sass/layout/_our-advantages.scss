@@ -32,3 +32,63 @@ $advantages-number-color: #bebcba;
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .our-advantages {
+        h1 {
+            font-size: 50px;
+        }
+        &__number {
+            h1 {
+                font-size: 50px;
+            }
+        }
+        &__text {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .our-advantages {
+        h1 {
+            font-size: 50px;
+        }
+        &__number {
+            h1 {
+                font-size: 50px;
+            }
+        }
+        &__text {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .our-advantages {
+        &__item {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 35px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        &__number {
+            h1 {
+                font-size: 50px;
+            }
+        }
+        &__text {
+            text-align: center;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
