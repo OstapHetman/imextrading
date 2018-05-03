@@ -39,3 +39,39 @@ $second-text-color: #fbd301;
         }
     }
 }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .transportation {
+        h1 {
+            margin-bottom: 15px;
+        }
+        padding-bottom: 50px;
+        &__item {
+            padding-top: 60px;
+            img {
+                max-width: 100px;
+            }
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .transportation {
+        padding-bottom: 60px;
+        h1 {
+            margin-bottom: 15px;
+        }
+        &__item {
+            padding-top: 60px;
+            img {
+                max-width: 80px;
+            }
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}

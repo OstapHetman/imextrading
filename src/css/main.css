@@ -852,6 +852,30 @@ header {
       background-size: contain;
       background-position: center; }
 
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .transportation {
+    padding-bottom: 50px; }
+    .transportation h1 {
+      margin-bottom: 15px; }
+    .transportation__item {
+      padding-top: 60px; }
+      .transportation__item img {
+        max-width: 100px; }
+      .transportation__item a {
+        font-size: 20px; } }
+
+@media screen and (max-width: 575px) {
+  .transportation {
+    padding-bottom: 60px; }
+    .transportation h1 {
+      margin-bottom: 15px; }
+    .transportation__item {
+      padding-top: 60px; }
+      .transportation__item img {
+        max-width: 80px; }
+      .transportation__item a {
+        font-size: 14px; } }
+
 .certificate {
   background: url("../img/certificate-bg.jpg") no-repeat;
   background-size: cover;
@@ -964,6 +988,23 @@ header {
       visibility: visible;
       display: block;
       visibility: visible; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .certificate #carouselCertificate .carousel-inner .carousel-item div img {
+    max-width: 170px;
+    min-height: 245px; } }
+
+@media screen and (max-width: 767px) {
+  .certificate {
+    min-height: unset; }
+    .certificate #carouselCertificate {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .certificate #carouselCertificate .carousel-inner .carousel-item div {
+        max-width: 170px; }
+        .certificate #carouselCertificate .carousel-inner .carousel-item div img {
+          width: 100%;
+          min-height: 245px; } }
 
 .our-product {
   padding-top: 50px;

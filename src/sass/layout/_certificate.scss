@@ -117,3 +117,29 @@ $second-text-color: #fbd301;
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .certificate #carouselCertificate .carousel-inner .carousel-item div {
+        img {
+            max-width: 170px;
+            min-height: 245px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .certificate {
+        min-height: unset;
+        #carouselCertificate {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .carousel-inner .carousel-item div {
+                max-width: 170px;
+                img {
+                    width: 100%;
+                    min-height: 245px;
+                }
+            }
+        }
+    }
+}
