@@ -22,7 +22,6 @@
 
     <!-- Start Header -->
     <header>
-        <canvas id="space"></canvas>
         <div class="container">
             <!-- Start Navigation -->
             <nav class="navbar navbar-expand-lg">
@@ -68,20 +67,21 @@
                     </div>
                 </div>
                 <div class="information__brand mx-auto mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0">
-                    <img src="img/brand.png" alt="Brand">
+                    <img src="img/logo_gif.gif" alt="Brand">
                 </div>
                 <div class="information__contact text-center text-sm-right text-md-right text-lg-right text-xl-right d-flex flex-column">
                     <a class="information__contact__phone" href="tel:+38 (095) 000-05-01">+38 (095) 000-05-01</a>
                     <a class="information__contact__email" href="mailto:admin@mark-lab.biz">admin@mark-lab.biz</a>
-                    <a class="information__contact__get-call" href="#">Заказать звонок</a>
+                    <a class="information__contact__get-call" href="#" data-toggle="modal" data-target="#callMeModal">Заказать звонок</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="main-header-information text-center">
                         <h1>Производство и продажа подсолнечного масла </h1>
-                        <p class="d-block mx-auto">текст-текст-текст- текст-текст-текст- текст-текст-текст- текст-текст-текст-текст-текст-текст- текст-текст-текст- текст-текст-текст- текст-текст-текст-текст-текст-текст- текст-текст-текст- текст-текст-текст- текст-текст-текст-</p>
-                        <button class="btn">Получить прайс</button>
+                        <p class="d-block mx-auto">Промышленный комплекс компании ImExTrading Industrial Development Ltd – это полный цикл производства, розлива, фасовки и переработки подсолнечного масла, а так же выпуска пшеничной муки высшего сорта. Продукция проходит многоэтапный
+                            технологический и качественный контроль, поставки реализуются в любую точку мира.</p>
+                        <button class="btn" data-toggle="modal" data-target="#requestModal">Получить прайс</button>
                     </div>
                 </div>
             </div>
@@ -118,62 +118,62 @@
             <h1 class="section-title text-center">Наша продукция</h1>
             <div class="row">
                 <div class="col-lg-12">
-                    <div id="carouselProduction" class="carousel slide" data-ride="carousel" data-interval="9000">
-                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                            <div class="carousel-item col-md-4 col-lg-4 active">
+                    <div id="carouselProduction" class="carousel slide" data-ride="false" data-interval="false">
+                        <div class="carousel-inner carousel-production-inner row w-100 mx-auto" role="listbox">
+                            <div class="carousel-production-item carousel-item col-md-4 col-lg-4 active">
                                 <div class="text-center mx-auto">
-                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
-                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
-                                    <button class="btn">Узнать подробнее</button>
+                                    <img class="img-fluid mx-auto d-block" src="img/flexy_tank.png" alt="slide 1">
+                                    <p>Нерафинированное подсолнечное масло на разлив</p>
+                                    <button class="btn" data-toggle="modal" data-target="#productOne">Узнать подробнее</button>
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4">
+                            <div class="carousel-production-item carousel-item col-md-4 col-lg-4">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 2">
-                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
-                                    <button class="btn">Узнать подробнее</button>
+                                    <p>Рафинированное подсолнечное масло ТМ Kappi – 1 л.</p>
+                                    <button class="btn" data-toggle="modal" data-target="#productTwo">Узнать подробнее</button>
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4">
+                            <div class="carousel-production-item carousel-item col-md-4 col-lg-4">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
-                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
-                                    <button class="btn">Узнать подробнее</button>
+                                    <p>Рафинированное подсолнечное масло ТМ Kappi – 2 л.</p>
+                                    <button class="btn" data-toggle="modal" data-target="#productThree">Узнать подробнее</button>
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4">
+                            <div class="carousel-production-item carousel-item col-md-4 col-lg-4">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
-                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
-                                    <button class="btn">Узнать подробнее</button>
+                                    <p>Рафинированное подсолнечное масло ТМ Kappi – 5 л.</p>
+                                    <button class="btn" data-toggle="modal" data-target="#productFour">Узнать подробнее</button>
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4">
+                            <div class="carousel-production-item carousel-item col-md-4 col-lg-4">
                                 <div class="text-center mx-auto">
-                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
-                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
-                                    <button class="btn">Узнать подробнее</button>
+                                    <img class="img-fluid mx-auto d-block" src="img/zhmyx.jpg" alt="slid#e 1">
+                                    <p>Жмых подсолнечника</p>
+                                    <button class="btn" data-toggle="modal" data-target="#productFive">Узнать подробнее</button>
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4">
+                            <div class="carousel-production-item carousel-item col-md-4 col-lg-4">
                                 <div class="text-center mx-auto">
-                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
-                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
-                                    <button class="btn">Узнать подробнее</button>
+                                    <img class="img-fluid mx-auto d-block" src="img/muka.png" alt="slide 1">
+                                    <p>Мука пшеничная ТМ Kappi – 1 кг.</p>
+                                    <button class="btn" data-toggle="modal" data-target="#productSix">Узнать подробнее</button>
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4">
+                            <div class="carousel-production-item carousel-item col-md-4 col-lg-4">
                                 <div class="text-center mx-auto">
-                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
-                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
-                                    <button class="btn">Узнать подробнее</button>
+                                    <img class="img-fluid mx-auto d-block" src="img/muka.png" alt="slide 1">
+                                    <p>Мука пшеничная ТМ Kappi – 2 кг.</p>
+                                    <button class="btn" data-toggle="modal" data-target="#productSeven">Узнать подробнее</button>
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4">
+                            <div class="carousel-production-item carousel-item col-md-4 col-lg-4">
                                 <div class="text-center mx-auto">
-                                    <img class="img-fluid mx-auto d-block" src="img/oil.png" alt="slide 1">
-                                    <p>Подсолнечное масло МАРКА - 0, 5 л</p>
-                                    <button class="btn">Узнать подробнее</button>
+                                    <img class="img-fluid mx-auto d-block" src="img/muka.png" alt="slide 1">
+                                    <p>Мука пшеничная ТМ Kappi – 25 кг.</p>
+                                    <button class="btn" data-toggle="modal" data-target="#productEight">Узнать подробнее</button>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                             <h1>01</h1>
                         </div>
                         <div class="our-advantages__text">
-                            <p>Пол будет готов в лучшем виде за максимально короткий период времени, который вам точно озвучат мастера. У нас работают технологи и паркетчики с опытом от 10 лет.
+                            <p>Продуктивные производственные линии. Минимальные сроки обработки и формирования заказа
                             </p>
                         </div>
                     </div>
@@ -212,7 +212,7 @@
                             <h1>02</h1>
                         </div>
                         <div class="our-advantages__text">
-                            <p>Пол будет готов в лучшем виде за максимально короткий период времени, который вам точно озвучат мастера. У нас работают технологи и паркетчики с опытом от 10 лет.
+                            <p>Работа ведется в соответствии с международной системой менеджмента – все производственные этапы тщательно контролируются экспертами-технологами.
                             </p>
                         </div>
                     </div>
@@ -221,7 +221,7 @@
                             <h1>03</h1>
                         </div>
                         <div class="our-advantages__text">
-                            <p>Пол будет готов в лучшем виде за максимально короткий период времени, который вам точно озвучат мастера. У нас работают технологи и паркетчики с опытом от 10 лет.
+                            <p>Сертификаты качества и стандарты соответствия – все образцы продукции производятся в соответствии с ГОСТ Украины и ISO.
                             </p>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                             <h1>04</h1>
                         </div>
                         <div class="our-advantages__text">
-                            <p>Пол будет готов в лучшем виде за максимально короткий период времени, который вам точно озвучат мастера. У нас работают технологи и паркетчики с опытом от 10 лет.
+                            <p>Любые форматы поставок – рафинированное и нерафинированное подсолнечное масло, мука регулярно отправляются партнерам из Украины и других стран. Работаем по всему миру!
                             </p>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
                     <h2>Получите наш прайс и ознакомьтесь с ним</h2>
                 </div>
                 <div class="col-md-4 col-lg-4">
-                    <button class="btn">Оформить заявку</button>
+                    <button class="btn" data-toggle="modal" data-target="#requestModal">Оформить заявку</button>
                 </div>
             </div>
         </div>
@@ -270,9 +270,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien tortor, congue id eros at, facilisis fermentum quam. Morbi a vehicula est, non placerat ipsum. Aenean nec posuere ex. Orci varius natoque penatibus et magnis dis parturient
-                        montes, nascetur ridiculus mus. Praesent ac commodo ante, nec imperdiet tellus. Suspendisse eget magna nec ligula porttitor porta in vitae tellus. Aliquam in diam luctus, tristique urna non, luctus erat. Sed imperdiet nec erat
-                        luctus sagittis. Donec blandit finibus tellus suscipit blandit. Praesent iaculis cursus dui, at molestie magna bibendum efficitur.
+                    <p class="text-justify">Наши клиенты не ограничены территориальными рамками и расстоянием! Партии абсолютно любых масштабов ежедневно отправляются кораблями или грузовыми фургонами. Регулярные поставки производятся в Китай, Индию, ОАЭ и страны Европы. Мы
+                        берем на себя полную ответственность за соответствие отправленного товара заявленным параметрам.
                     </p>
                 </div>
             </div>
@@ -286,13 +285,20 @@
             <h1 class="section-title text-center">
                 Транспортировка
             </h1>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="text-justify">Наши партнеры – надежные логистические компании с безупречной репутацией. В зависимости от конечной точки доставки могут быть использованы одновидовые или комбинированные методы – и сухопутным, и водным транспортом. К поставкам за
+                        рубеж привлекаются вспомогательные партнеры, сотрудничество с которыми позволяет значительно сократить сроки доставки продукции.
+                    </p>
+                </div>
+            </div>
             <div class="row justify-content-around">
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 transportation__item transportation__item-truck">
                     <div class="text-center">
                         <div class="transportation__item__img">
                             <img class="d-block mx-auto" src="img/truck-icon.png" alt="Icon">
                         </div>
-                        <a class="d-block" href="#">Сухопутный транспорт</a>
+                        <a class="d-block" href="#" data-toggle="modal" data-target="#suxModal">Сухопутный транспорт</a>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 transportation__item transportation__item-cruiser">
@@ -300,7 +306,7 @@
                         <div class="transportation__item__img">
                             <img class="d-block mx-auto" src="img/cruise-icon.png" alt="Icon">
                         </div>
-                        <a class="d-block" href="#">Водный транспорт</a>
+                        <a class="d-block" href="#" data-toggle="modal" data-target="#vodModal">Водный транспорт</a>
                     </div>
                 </div>
             </div>
@@ -316,44 +322,38 @@
             </h1>
             <div class="row">
                 <div class="col-11 col-sm-6 col-md-10 col-lg-10 col-xl-10 mx-auto">
-                    <div id="carouselCertificate" class="carousel slide" data-ride="carousel" data-interval="9000">
-                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                            <div class="carousel-item col-md-4 col-lg-4 active" data-toggle="modal" data-target="#certificateModal">
+                    <div id="carouselCertificate" class="carousel slide" data-interval="false" data-ride="false">
+                        <div class="carousel-inner carousel-certificate-inner row w-100 mx-auto" role="listbox">
+                            <div class="carousel-item carousel-certificate-item col-md-4 col-lg-4 active" data-toggle="modal" data-target="#certificateModal">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block  certificate__img" src="img/certificate2.jpg" alt="slide 1">
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
+                            <div class="carousel-item carousel-certificate-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block  certificate__img" src="img/certificate.png" alt="slide 1">
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
+                            <div class="carousel-item carousel-certificate-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block  certificate__img" src="img/certificate2.jpg" alt="slide 1">
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
+                            <div class="carousel-item carousel-certificate-itemcol-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block  certificate__img" src="img/certificate.png" alt="slide 1">
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
+                            <div class="carousel-item carousel-certificate-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block  certificate__img" src="img/certificate2.jpg" alt="slide 1">
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
+                            <div class="carousel-item carousel-certificate-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
                                 <div class="text-center mx-auto">
                                     <img class="img-fluid mx-auto d-block  certificate__img" src="img/certificate.png" alt="slide 1">
                                 </div>
                             </div>
-                            <div class="carousel-item col-md-4 col-lg-4" data-toggle="modal" data-target="#certificateModal">
-                                <div class="text-center mx-auto">
-                                    <img class="img-fluid mx-auto d-block  certificate__img" src="img/certificate2.jpg" alt="slide 1">
-                                </div>
-                            </div>
-
                         </div>
                         <a class="carousel-controls carousel-control-prev" href="#carouselCertificate" role="button" data-slide="prev">
                             <i class="fa fa-caret-left" aria-hidden="true"></i>
@@ -379,19 +379,19 @@
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-3 text-center our-product__item">
                     <img class="d-block mx-auto" src="img/factory1.png" alt="Factory">
-                    <a class="d-block" href="#">Рафинация и дезодерация</a>
+                    <a class="d-block" href="#" data-toggle="modal" data-target="#rafModal">Рафинация и дезодерация</a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 text-center our-product__item">
                     <img class="d-block mx-auto" src="img/factory2.png" alt="Factory">
-                    <a class="d-block" href="#">Розлив и фасовка</a>
+                    <a class="d-block" href="#" data-toggle="modal" data-target="#rozModal">Розлив и фасовка</a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 text-center our-product__item">
                     <img class="d-block mx-auto" src="img/factory3.png" alt="Factory">
-                    <a class="d-block" href="#">Маслоперерабатывающий завод</a>
+                    <a class="d-block" href="#" data-toggle="modal" data-target="#masModal">Маслоперерабатывающий завод</a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 text-center our-product__item">
                     <img class="d-block mx-auto" src="img/factory4.png" alt="Factory">
-                    <a class="d-block" href="#">Наши склады</a>
+                    <a class="d-block" href="#" data-toggle="modal" data-target="#sklModal">Наши склады</a>
                 </div>
             </div>
         </div>
@@ -474,11 +474,11 @@
     <section class="get-our-price">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8">
+                <div class="col-md-8 col-lg-8">
                     <h2>Получите наш прайс и ознакомьтесь с ним</h2>
                 </div>
-                <div class="col-lg-4">
-                    <button class="btn">Оформить заявку</button>
+                <div class="col-md-4 col-lg-4">
+                    <button class="btn" data-toggle="modal" data-target="#requestModal">Оформить заявку</button>
                 </div>
             </div>
         </div>
@@ -499,7 +499,7 @@
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Как заключить с вами партнерство?
+                                        Какие гарантии качества продукции вы предоставляете?
                                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                                 </button>
                                 </h5>
@@ -507,9 +507,7 @@
 
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    Весь перечень продукции обладает сертификатами качества украинского, европейского и международного уровня. Ознакомиться с информацией вы можете в разделе «Наши сертификаты».
                                 </div>
                             </div>
                         </div>
@@ -517,16 +515,14 @@
                             <div class="card-header" id="headingTwo">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Как заключить с вами партнерство?
-                                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                        Какого объема партию можно у вас заказать?
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                   </button>
                                 </h5>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    Мы не ограничиваем своих партнеров в количественном параметре заказа. Производственные мощности позволяют изготавливать до нескольких тонн продукции в сутки. Формат покупок для любых целей!
                                 </div>
                             </div>
                         </div>
@@ -534,16 +530,14 @@
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Как заключить с вами партнерство?
-                                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                        Через какое время после оформления заказа вы отправляете товар?
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                   </button>
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    Грамотная система менеджмента позволяет нам мгновенной обрабатывать заявки и отправлять товар на формирование в максимально сжатые сроки. Наши клиенты избавлены от томительного ожидания!
                                 </div>
                             </div>
                         </div>
@@ -551,16 +545,15 @@
                             <div class="card-header" id="headingFour">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                Как заключить с вами партнерство?
-                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                        Как происходит оформление заказа?
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                       </button>
                                 </h5>
                             </div>
                             <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    Свяжитесь с менеджером по телефону или в форме обратной связи, чтобы получить прайс. После согласования всех деталей, заключения договора и оплаты заказа ваша заявка поступит на производство. При условии наличия необходимого количества товара на складе
+                                    будет произведена незамедлительная отгрузка.
                                 </div>
                             </div>
                         </div>
@@ -568,16 +561,14 @@
                             <div class="card-header" id="headingFive">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                                    Как заключить с вами партнерство?
-                                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                          </button>
+                                        Есть ли возможность самовывоза товара?
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </button>
                                 </h5>
                             </div>
                             <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    В нашей компании работает локальная логистическая служба, которая обеспечивает доставку как по Украине, так и в ряд других стран. Ваш заказ будет доставлен грузовым сухопутным (фуры) или водным (корабли) транспортом.
                                 </div>
                             </div>
                         </div>
@@ -598,16 +589,20 @@
                 <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 footer__qrcode align-self-center align-self-lg-end align-self-xl-end">
                     <img class="d-block mx-auto" src="img/qrcode.png" alt="qrcode">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 footer__social align-self-end">
+                <div class="col-sm-6 col-md-6 col-lg-3 footer__social align-self-end">
                     <h1>Для связи с нами:</h1>
                     <a class="footer__social__phone" href="tel:+38 (095) 000-05-01">+38 (095) 000-05-01</a>
                     <p>Украина, Одесса, 65000,</p>
                     <p> пр. Шевченка, 4Д, офис 63</p>
                     <a class="footer__social__map" href="#" data-toggle="modal" data-target="#footerLocationModal">Еще наши адреса</a>
                 </div>
-                <div class="offset-lg-1 col-lg-3 align-self-center text-center footer__questions">
+                <div class="col-sm-6 col-md-6 col-lg-2 align-self-center text-center footer__tm">
+                    <h2>Наша ТМ</h2>
+                    <img class="d-block w-100 mx-auto" src="img/kappi.png" alt="kappi">
+                </div>
+                <div class="col-md-6 col-lg-3 align-self-center text-center footer__questions">
                     <h2>Остались вопросы?</h2>
-                    <button class="btn">Обратная связь</button>
+                    <button class="btn" data-toggle="modal" data-target="#questionsModal">Обратная связь</button>
                 </div>
             </div>
             <div class="row">
@@ -678,6 +673,735 @@
             </div>
         </div>
     </div>
+
+    <!-- START CALL-ME MODAL Заявка на звонок-->
+    <div class="modal fade mainModals" id="callMeModal" tabindex="-1" role="dialog" aria-labelledby="callMeModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h1 class="text-center" id="head-text">Заявка на звонок</h1>
+                        <p class="text-center">Введите ваше имя, номер телефона, специалист компании свяжется с вами и ответит на ваши вопросы</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" placeholder="Укажите имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="phone" placeholder="Укажите номер телефона">
+                            </div>
+                            <div class="mt-4 pt-2 footer-btn">
+                                <input type="submit" class="btn px-5 py-2 btn-shine main-btn d-block m-auto" value="Позвоните мне">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CALL ME MODAL -->
+
+    <!-- START CALL-ME MODAL Заявка на звонок-->
+    <div class="modal fade mainModals" id="questionsModal" tabindex="-1" role="dialog" aria-labelledby="callMeModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h1 class="text-center" id="head-text">Задайте Ваш вопрос</h1>
+                        <p class="text-center">Введите ваше имя, номер телефона, и напишите вопрос, специалист компании свяжется с вами и ответит на ваш вопрос</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" placeholder="Укажите имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="phone" placeholder="Укажите номер телефона">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="2" placeholder="Введите Вашe сообщение..."></textarea>
+                            </div>
+                            <div class="mt-4 pt-2 footer-btn">
+                                <input type="submit" class="btn px-5 py-2 btn-shine main-btn d-block m-auto" value="Задать вопрос">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CALL ME MODAL -->
+
+    <!-- START CALL-ME MODAL Заявка на звонок-->
+    <div class="modal fade mainModals" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="callMeModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h1 class="text-center" id="head-text">Оформить заявку</h1>
+                        <p class="text-center">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время!</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" placeholder="Укажите имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="phone" placeholder="Укажите номер телефона">
+                            </div>
+                            <div class="mt-4 pt-2 footer-btn">
+                                <input type="submit" class="btn px-5 py-2 btn-shine main-btn d-block m-auto" value="Оформить заявку">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CALL ME MODAL -->
+
+    <!-- Start Modals for TRANSPORTATION -->
+    <div class="modal fade production-modals" id="suxModal" tabindex="-1" role="dialog" aria-labelledby="suxModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="suxModal">Сухопутный транспорт</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Использование грузовых фургонов дает возможность отправлять заказы небольшими партиями, обеспечивая высокую скорость и маневренность процесса доставки. Груз может доставляться различными маршрутами, выбор которых основывается на экономической выгоде и
+                        скорости.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade production-modals" id="vodModal" tabindex="-1" role="dialog" aria-labelledby="vodModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="vodModal">Водный транспорт</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Грузовые суда позволяют осуществлять межконтинентальные перевозки, а доставка продукции таким образом обходится значительно дешевле, в особенности на дальние расстояния. Перевозка может быть осуществлена как по естественным, так и по искусственным водоемам.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modals for TRANSPORTATION -->
+
+    <!-- Start modals for OUR PRODUCTION -->
+    <div class="modal fade production-modals" id="rafModal" tabindex="-1" role="dialog" aria-labelledby="rafModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="rafModal">Рафинация и дезодорация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Конечным продуктом является вымороженное, рафинированное и дезодорированное подсолнечное масло. Основные концепции производства – абсолютная безопасность, натуральность и отсутствие генно модифицированных организмов в составе продукта. На предприятии
+                        действует отдел контроля качества и безопасности, который отслеживает соответствие технологического процесса, начиная от поставки сырья, и заканчивая отправкой масла на фасовку. В качестве резервуаров для отправки наливного продукта
+                        используются цистерны и контейнеры.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= -->
+    <div class="modal fade production-modals" id="rozModal" tabindex="-1" role="dialog" aria-labelledby="rozModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="rozModal">Розлив и фасовка</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Современные и продуктивные производственные мощности позволили полностью автоматизировать процесс розлива масла в ПЭТ-тару и другие емкости. Процесс включает обязательную доочистку масла и проверку его качества как до фасовки, так и после. Партнерами
+                        компании являются ведущие производители оборудования, за счет изделий которых наращиваются мощность и значительно ускоряется производственный процесс.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= -->
+    <div class="modal fade production-modals" id="masModal" tabindex="-1" role="dialog" aria-labelledby="masModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="masModal">Маслоперерабатывающий завод</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Нерафинированное масло перерабатывается по технологии прессования полностью механическим способом. Таким образом компании удается нивелировать человеческий фактор и полностью исключить нахождение в конечном продукте посторонних примесей и синтетических
+                        веществ. В качестве основного сырья используются семена подсолнечника, выращенного в экологически чистой зоне Украины.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= -->
+    <div class="modal fade production-modals" id="sklModal" tabindex="-1" role="dialog" aria-labelledby="sklModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="sklModal">Наши склады</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Весь объем готовой продукции хранится на специализированных складах. В помещениях поддерживается стабильный температурный режим, регулярно проводятся санитарные обработки и тщательно контролируются все технологические параметры хранения.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modals for OUR PRODUCTION -->
+    <!-- Modal -->
+    <div class="modal fade our-products" id="productOne" tabindex="-1" role="dialog" aria-labelledby="productOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div id="productOneCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#productOneCarousel" data-slide-to="0" class="active"><img class="d-block mx-auto" src="img/flexy_tank.png" alt="First slide"></li>
+                                        <li data-target="#productOneCarousel" data-slide-to="1"><img class="d-block mx-auto" src="img/flexy_tank.png" alt="First slide"></li>
+                                        <li data-target="#productOneCarousel" data-slide-to="2"><img class="d-block mx-auto" src="img/flexy_tank.png" alt="First slide"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block mx-auto" src="img/flexy_tank.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/flexy_tank.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/flexy_tank.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev carousel-controls" href="#productOneCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next carousel-controls" href="#productOneCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 offset-md-1 col-md-8 col-lg-8 col-xl-8 text-side">
+                                <h1>Нерафинированное масло</h1>
+                                <div class="information">
+                                    <h2>Нерафинированное подсолнечное масло на разлив</h2>
+                                    <ul class="list-unstyled">
+                                        <li>- Вся информация по запросу</li>
+                                    </ul>
+                                </div>
+                                <div class="add-information">
+                                    <ul class="list-unstyled">
+                                        <li>Поставляется в контейнерах, флекситанках и цистернах.</li>
+                                        <li>Из стоимости исключена наценка на фасовку и дообработку, закупка в таком формате выгодна для крупных предприятий пищевой промышленности.</li>
+                                        <li>Масло проходит тщательную проверку качества, есть сертификаты соответствия.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============TWO============== -->
+    <div class="modal fade our-products" id="productTwo" tabindex="-1" role="dialog" aria-labelledby="productOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div id="productTwoCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#productTwoCarousel" data-slide-to="0" class="active"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                        <li data-target="#productTwoCarousel" data-slide-to="1"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                        <li data-target="#productTwoCarousel" data-slide-to="2"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev carousel-controls" href="#productTwoCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next carousel-controls" href="#productTwoCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 offset-md-1 col-md-8 col-lg-8 col-xl-8 text-side">
+                                <h1>БУТЫЛКА 1 литр</h1>
+                                <div class="information">
+                                    <h2>Рафинированное подсолнечное масло ТМ Kappi</h2>
+                                    <ul class="list-unstyled">
+                                        <li>- Объём: 1 л</li>
+                                        <li>- Вес Нетто: 920 г</li>
+                                        <li>- Срок Годности: 24 месяца</li>
+                                    </ul>
+                                </div>
+                                <div class="add-information">
+                                    <ul class="list-unstyled">
+                                        <li>Поставляется в ПЭТ-бутылках,</li>
+                                        <li>производится из ядер подсолнечника, не проходившего химическую обработку.</li>
+                                        <li>Оптимальное решение для розничных и оптовых продаж. Срок годности 2 года.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============THREE============== -->
+    <div class="modal fade our-products" id="productThree" tabindex="-1" role="dialog" aria-labelledby="productOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div id="productThreeCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#productThreeCarousel" data-slide-to="0" class="active"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                        <li data-target="#productThreeCarousel" data-slide-to="1"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                        <li data-target="#productThreeCarousel" data-slide-to="2"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev carousel-controls" href="#productThreeCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next carousel-controls" href="#productThreeCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 offset-md-1 col-md-8 col-lg-8 col-xl-8 text-side">
+                                <h1>БУТЫЛКА 2 литр</h1>
+                                <div class="information">
+                                    <h2>Рафинированное подсолнечное масло ТМ Kappi</h2>
+                                    <ul class="list-unstyled">
+                                        <li>- Объём: 2 л</li>
+                                        <li>- Вес Нетто: 1840 г</li>
+                                        <li>- Срок Годности: 24 месяца</li>
+                                    </ul>
+                                </div>
+                                <div class="add-information">
+                                    <ul class="list-unstyled">
+                                        <li>Поставляется в ПЭТ-бутылках из очищенного сырья,</li>
+                                        <li>на этикетке нанесена информация о составе, вещественном содержании продукта,</li>
+                                        <li>а также информация о производителе. Срок годности 2 года.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============FOUR============== -->
+    <div class="modal fade our-products" id="productFour" tabindex="-1" role="dialog" aria-labelledby="productOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div id="productFourCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#productFourCarousel" data-slide-to="0" class="active"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                        <li data-target="#productFourCarousel" data-slide-to="1"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                        <li data-target="#productFourCarousel" data-slide-to="2"><img class="d-block mx-auto" src="img/oil.png" alt="First slide"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/oil.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev carousel-controls" href="#productFourCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next carousel-controls" href="#productFourCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 offset-md-1 col-md-8 col-lg-8 col-xl-8 text-side">
+                                <h1>БУТЫЛКА 5 литр</h1>
+                                <div class="information">
+                                    <h2>Рафинированное подсолнечное масло ТМ Kappi</h2>
+                                    <ul class="list-unstyled">
+                                        <li>- Объём: 5 л</li>
+                                        <li>- Вес Нетто: 4600 г</li>
+                                        <li>- Срок Годности: 24 месяца</li>
+                                    </ul>
+                                </div>
+                                <div class="add-information">
+                                    <ul class="list-unstyled">
+                                        <li>Поставляется в ПЭТ-бутлях, изготавливается из доочищенного сырья,</li>
+                                        <li>выращенного в экологически безопасной зоне Украины.
+                                        </li>
+                                        <li>Используется в пищевой промышленности и в сегменте частного потребления. Срок годности 2 года.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============FIVE============== -->
+    <div class="modal fade our-products" id="productFive" tabindex="-1" role="dialog" aria-labelledby="productOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div id="productFiveCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#productFiveCarousel" data-slide-to="0" class="active"><img class="d-block mx-auto" src="img/zhmyx.jpg" alt="First slide"></li>
+                                        <li data-target="#productFiveCarousel" data-slide-to="1"><img class="d-block mx-auto" src="img/zhmyx.jpg" alt="First slide"></li>
+                                        <li data-target="#productFiveCarousel" data-slide-to="2"><img class="d-block mx-auto" src="img/zhmyx.jpg" alt="First slide"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block mx-auto" src="img/zhmyx.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/zhmyx.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/zhmyx.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev carousel-controls" href="#productFiveCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next carousel-controls" href="#productFiveCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 offset-md-1 col-md-8 col-lg-8 col-xl-8 text-side">
+                                <h1>Жмых подсолнечника</h1>
+                                <div class="information">
+                                    <h2>Жмых подсолнечника</h2>
+                                    <ul class="list-unstyled">
+                                        <li>- Вся информация по запросу</li>
+                                    </ul>
+                                </div>
+                                <div class="add-information">
+                                    <ul class="list-unstyled">
+                                        <li>Отпускается на развес, минимальный объем уточняйте у менеджера.
+                                        </li>
+                                        <li>Используется в качестве кормовой добавки для животных, его получают путем дробления семян подсолнечника одновременно со стадией отжима.
+                                        </li>
+                                        <li>Ценнейший продукт для сельскохозяйственного сегмента.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============SIX============== -->
+    <div class="modal fade our-products" id="productSix" tabindex="-1" role="dialog" aria-labelledby="productOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div id="productSixCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#productSixCarousel" data-slide-to="0" class="active"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                        <li data-target="#productSixCarousel" data-slide-to="1"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                        <li data-target="#productSixCarousel" data-slide-to="2"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev carousel-controls" href="#productSixCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next carousel-controls" href="#productSixCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 offset-md-1 col-md-8 col-lg-8 col-xl-8 text-side">
+                                <h1>бумажный пакет 1 кг</h1>
+                                <div class="information">
+                                    <h2>Мука пшеничная ТМ Kappi</h2>
+                                    <ul class="list-unstyled">
+                                        <li>- Вес: 1 кг</li>
+                                        <li>- Срок Годности: 24 месяца</li>
+                                    </ul>
+                                </div>
+                                <div class="add-information">
+                                    <ul class="list-unstyled">
+                                        <li>Поставляется в бумажных пакетах с указанным составом, данными производителя и другими идентификаторами.
+                                        </li>
+                                        <li>Изготавливается из пшеницы высшего сорта, выращенной на юге Украины.
+                                        </li>
+                                        <li>Продукт полностью адаптирован для оптовой и розничной реализации.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============SEVEN============== -->
+    <div class="modal fade our-products" id="productSeven" tabindex="-1" role="dialog" aria-labelledby="productOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div id="productSevenCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#productSevenCarousel" data-slide-to="0" class="active"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                        <li data-target="#productSevenCarousel" data-slide-to="1"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                        <li data-target="#productSevenCarousel" data-slide-to="2"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev carousel-controls" href="#productSevenCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next carousel-controls" href="#productSevenCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 offset-md-1 col-md-8 col-lg-8 col-xl-8 text-side">
+                                <h1>бумажный пакет 2 кг</h1>
+                                <div class="information">
+                                    <h2>Мука пшеничная ТМ Kappi</h2>
+                                    <ul class="list-unstyled">
+                                        <li>- Вес: 2 кг</li>
+                                        <li>- Срок Годности: 24 месяца</li>
+                                    </ul>
+                                </div>
+                                <div class="add-information">
+                                    <ul class="list-unstyled">
+                                        <li>Поставляется в бумажных пакетах с указанным составом, данными производителя и другими идентификаторами.
+                                        </li>
+                                        <li>Изготавливается из пшеницы высшего сорта, выращенной на юге Украины.
+                                        </li>
+                                        <li>Продукт полностью адаптирован для оптовой и розничной реализации.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============SEVEN============== -->
+    <div class="modal fade our-products" id="productEight" tabindex="-1" role="dialog" aria-labelledby="productOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div id="productEightCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#productEightCarousel" data-slide-to="0" class="active"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                        <li data-target="#productEightCarousel" data-slide-to="1"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                        <li data-target="#productEightCarousel" data-slide-to="2"><img class="d-block mx-auto" src="img/muka.png" alt="First slide"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block mx-auto" src="img/muka.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev carousel-controls" href="#productEightCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next carousel-controls" href="#productEightCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 offset-md-1 col-md-8 col-lg-8 col-xl-8 text-side">
+                                <h1>полипропиленовыq мешок 25 кг</h1>
+                                <div class="information">
+                                    <h2>Мука пшеничная ТМ Kappi</h2>
+                                    <ul class="list-unstyled">
+                                        <li>- Вес: 25 кг</li>
+                                        <li>- Срок Годности: 24 месяца</li>
+                                    </ul>
+                                </div>
+                                <div class="add-information">
+                                    <ul class="list-unstyled">
+                                        <li>Поставляется в полипропиленовых мешках с указанным составом, данными производителя и другими идентификаторами.
+                                        </li>
+                                        <li>Изготавливается из пшеницы высшего сорта, выращенной на юге Украины.
+                                        </li>
+                                        <li>Продукт полностью адаптирован для оптовой и розничной реализации.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Modals Our Products -->
+
+    <!-- End Modals Our Products -->
     <!-- Latest compiled and minified JQuery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

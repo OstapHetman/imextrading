@@ -65,6 +65,7 @@ $second-text-color: #fbd301;
         .carousel-inner .active+.carousel-item,
         .carousel-inner .active+.carousel-item+.carousel-item {
             display: block;
+            transition: all 0.5s ease-in-out;
         }
         .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
         .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
@@ -82,7 +83,9 @@ $second-text-color: #fbd301;
             right: -25%;
             z-index: -1;
             display: block;
+            display: none;
             visibility: visible;
+            transition: all 1s ease-in-out;
         }
         /* left or forward direction */
         .active.carousel-item-left+.carousel-item-next.carousel-item-left,
@@ -92,6 +95,7 @@ $second-text-color: #fbd301;
             position: relative;
             transform: translate3d(-100%, 0, 0);
             visibility: visible;
+            /*transition: all 4s ease-in-out;*/
         }
         /* farthest right hidden item must be abso position for animations */
         .carousel-inner .carousel-item-prev.carousel-item-right {
@@ -112,6 +116,7 @@ $second-text-color: #fbd301;
             visibility: visible;
             display: block;
             visibility: visible;
+            /*transition: all 4s ease-in-out;*/
         }
     }
 }

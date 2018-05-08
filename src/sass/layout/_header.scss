@@ -8,19 +8,15 @@ header {
     background-position: center;
     min-height: 950px;
     position: relative;
-    canvas {
-        &#space {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            // z-index: -1;
-        }
-    }
     .information {
         font-family: 'Allgidus';
         z-index: 999;
+        &__brand {
+            img {
+                max-width: 183px;
+                height: auto;
+            }
+        }
         &__location {
             z-index: 999;
             p {

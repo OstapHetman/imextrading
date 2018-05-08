@@ -35,6 +35,7 @@ $card-header-bg: #fbd301;
                     color: #fff;
                     display: flex;
                     align-items: center;
+                    font-size: 14px;
                     &:hover {
                         text-decoration: none;
                     }
@@ -57,7 +58,16 @@ $card-header-bg: #fbd301;
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .faq #accordion .card .card-header button {
+        font-size: 10.2px;
+    }
+}
+
 @media screen and (min-width:576px) and (max-width: 767px) {
+    .faq #accordion .card .card-header button {
+        font-size: 9px;
+    }
     .faq {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -104,7 +114,7 @@ $card-header-bg: #fbd301;
                     padding: 0;
                     position: relative;
                     button {
-                        font-size: 14px;
+                        font-size: 9px;
                         i {
                             background-color: #000;
                             width: 23px;

@@ -1,5 +1,15 @@
 $second-text-color: #fbd301;
+$mainTextColor: #fbd301;
+$modalP: #000;
+$inputBg: #f1f1f1;
+$placeholder: #999898;
 #certificateModal {
+    &.show {
+        display: flex !important;
+        .modal-dialog {
+            margin: auto;
+        }
+    }
     .modal-dialog {
         .modal-content {
             background-color: unset;
@@ -31,6 +41,12 @@ $second-text-color: #fbd301;
 
 #headerLocationModal,
 #footerLocationModal {
+    &.show {
+        display: flex !important;
+        .modal-dialog {
+            margin: auto;
+        }
+    }
     .modal-content {
         border-radius: unset;
         font-family: 'Allgidus';
@@ -80,21 +96,455 @@ $second-text-color: #fbd301;
     }
 }
 
-@media screen and (min-width: 576px) {
-    .modal {
-        text-align: center;
-        padding: 0!important;
-    }
-    .modal:before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        margin-right: -4px;
+// MainModals Styling
+.mainModals {
+    &.show {
+        display: flex !important;
+        .modal-dialog {
+            margin: auto;
+        }
     }
     .modal-dialog {
-        display: inline-block;
-        text-align: left;
-        vertical-align: middle;
+        border: 8px $mainTextColor solid;
+        border-radius: unset;
+        .modal-content {
+            font-family: 'Allgidus';
+            border: unset;
+            border-radius: unset;
+            .modal-header {
+                padding-bottom: 0;
+                border: unset;
+                button.close {
+                    opacity: 1;
+                    span {
+                        color: $mainTextColor;
+                        font-size: em(26);
+                    }
+                }
+            }
+            .modal-body {
+                h1 {
+                    font-size: em(30);
+                    color: $mainTextColor;
+                }
+                p {
+                    font-size: em(16);
+                    color: $modalP;
+                }
+                form {
+                    margin-top: 25px;
+                    .footer-btn {
+                        margin-bottom: 45px;
+                        input {
+                            width: 295px;
+                            font-size: 18px;
+                            border-radius: unset;
+                            background-color: #000;
+                            color: #fff;
+                        }
+                    }
+                    textarea {
+                        resize: none;
+                        display: block;
+                    }
+                    input,
+                    textarea {
+                        background-color: $inputBg;
+                        border: unset;
+                        // border-radius: 30px;
+                        border-radius: unset;
+                        padding: 12px 35px;
+                        margin-top: 30px;
+                        max-width: 305px;
+                        margin: 0 auto;
+                        &::-webkit-input-placeholder {
+                            /* Chrome/Opera/Safari */
+                            font-family: 'Allgidus';
+                            color: $placeholder;
+                            font-size: em(15);
+                        }
+                        &::-moz-placeholder {
+                            /* Firefox 19+ */
+                            font-family: 'Allgidus';
+                            color: $placeholder;
+                            font-size: em(15);
+                        }
+                        &:-ms-input-placeholder {
+                            /* IE 10+ */
+                            font-family: 'Allgidus';
+                            color: $placeholder;
+                            font-size: em(15);
+                        }
+                        &:-moz-placeholder {
+                            /* Firefox 18- */
+                            font-family: 'Allgidus';
+                            color: $placeholder;
+                            font-size: em(15);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.production-modals {
+    &.show {
+        display: flex !important;
+        .modal-dialog {
+            margin: auto;
+        }
+    }
+    .modal-dialog {
+        border: 8px $mainTextColor solid;
+        border-radius: unset;
+        position: relative;
+        .modal-content {
+            font-family: 'Allgidus';
+            border: unset;
+            border-radius: unset;
+            padding: 15px 15px 15px 15px;
+            .modal-header {
+                padding-bottom: 0;
+                border: unset;
+                h5 {
+                    font-size: 28px;
+                }
+                button.close {
+                    position: absolute;
+                    top: -10%;
+                    right: -9%;
+                    opacity: 1;
+                    span {
+                        color: $mainTextColor;
+                        font-size: em(26);
+                    }
+                }
+            }
+            .modal-body {
+                p {
+                    font-size: em(16);
+                    color: #000
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .production-modals {
+        &.show {
+            display: flex !important;
+        }
+        .modal-dialog {
+            border: 2px $mainTextColor solid;
+            border-radius: unset;
+            position: relative;
+            max-width: 90%;
+            margin: auto;
+            .modal-content {
+                padding: 5px 5px 5px 5px;
+                .modal-header {
+                    h5 {
+                        font-size: 18px;
+                    }
+                    button.close {
+                        top: 0%;
+                        right: 0%;
+                    }
+                }
+                .modal-body {
+                    p {
+                        font-size: em(12);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .mainModals {
+        top: 8%;
+        .modal-dialog {
+            border: unset;
+            .modal-content {
+                .modal-body {
+                    h1 {
+                        font-size: em(18);
+                    }
+                    p {
+                        font-size: em(11);
+                    }
+                    form {
+                        .footer-btn {
+                            button {
+                                width: unset;
+                                font-size: 15px;
+                            }
+                        }
+                        input {
+                            max-width: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.our-products {
+    &.show {
+        display: flex !important;
+        .modal-dialog {
+            margin: auto;
+        }
+    }
+    .modal-dialog {
+        position: relative;
+        .modal-header {
+            border: unset;
+            button {
+                position: absolute;
+                top: -10%;
+                right: -5%;
+                opacity: 1;
+                span {
+                    font-size: 1.625em;
+                    color: #fbd301;
+                }
+            }
+        }
+        .modal-body {
+            padding: 32px 57px 40px 57px;
+        }
+        .carousel {
+            .carousel-indicators {
+                bottom: -45px;
+                li {
+                    background-color: unset;
+                    &.active {
+                        background-color: unset;
+                    }
+                    img {
+                        max-width: 18px;
+                        height: auto;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .carousel-item {
+                img {
+                    max-width: 100px;
+                    height: auto;
+                }
+            }
+            .carousel-controls {
+                opacity: 1;
+                &.carousel-control-prev {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                &.carousel-control-next {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                i {
+                    background-color: #000;
+                    color: #fff;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    font-size: 22px;
+                    &.fa-caret-left {
+                        padding-right: 3px;
+                    }
+                    &.fa-caret-right {
+                        padding-left: 3px;
+                    }
+                }
+            }
+        }
+        .text-side {
+            text-transform: uppercase;
+            font-family: 'Museo2';
+            h1 {
+                font-size: 35px;
+                color: #fbd301;
+                letter-spacing: 2.8px;
+            }
+            .information {
+                position: relative;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 70%;
+                    height: 2px;
+                    background-color: #000;
+                    top: 0;
+                    left: 0;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 70%;
+                    height: 2px;
+                    background-color: #fbd301;
+                    bottom: 0;
+                    left: 0;
+                }
+                h2 {
+                    font-size: 12px;
+                    color: #000;
+                    margin-bottom: 25px;
+                }
+                ul {
+                    margin-bottom: 0px;
+                    li {
+                        font-size: 18px;
+                        line-height: 35px;
+                    }
+                }
+            }
+            .add-information {
+                padding-top: 25px;
+                ul {
+                    li {
+                        font-size: 10px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Product Modal
+@media screen and (max-width: 575px) {
+    .our-products {
+        &.show {
+            display: flex;
+            .modal-dialog {
+                margin: auto;
+            }
+        }
+        .modal-dialog {
+            .modal-body {
+                padding: 5px 10px 5px 10px;
+            }
+            .carousel {
+                .carousel-item img {
+                    max-width: 50px;
+                }
+                .carousel-indicators {
+                    display: none;
+                }
+                .carousel-controls i {
+                    font-size: 24px;
+                }
+            }
+            .text-side {
+                margin-top: 50px;
+                h1 {
+                    font-size: 22px;
+                    text-align: center;
+                }
+                .information {
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+                    ul li {
+                        font-size: 12px !important;
+                        line-height: 25px;
+                    }
+                }
+                .add-information {
+                    padding-top: 10px;
+                    ul {
+                        li {
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+            .modal-header {
+                button {
+                    top: 1% !important;
+                    right: 2% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .our-products {
+        .modal-dialog {
+            .carousel {
+                .carousel-indicators {
+                    display: none;
+                }
+            }
+            .text-side {
+                margin-top: 50px;
+                h1 {
+                    font-size: 30px;
+                }
+                .information ul li {
+                    font-size: 14px !important;
+                }
+            }
+            .modal-header {
+                button {
+                    top: 0% !important;
+                    right: 2% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .our-products {
+        .modal-dialog {
+            width: 100%;
+            max-width: 700px;
+            .modal-header {
+                button {
+                    top: -10% !important;
+                    right: -2% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .our-products {
+        .modal-dialog {
+            width: 100%;
+            max-width: 900px;
+            .modal-header {
+                button {
+                    top: -10% !important;
+                    right: -2% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .our-products {
+        .modal-dialog {
+            width: 100%;
+            max-width: 957px;
+        }
     }
 }

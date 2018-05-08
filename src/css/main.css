@@ -38,6 +38,11 @@
   font-family: "RoadRadio-Thin";
   src: url("../fonts/RoadRadio/RoadRadio-Thin.otf") format("truetype"); }
 
+#certificateModal.show {
+  display: flex !important; }
+  #certificateModal.show .modal-dialog {
+    margin: auto; }
+
 #certificateModal .modal-dialog .modal-content {
   background-color: unset;
   border: unset; }
@@ -57,6 +62,13 @@
       width: 100%;
       height: auto;
       position: relative; }
+
+#headerLocationModal.show,
+#footerLocationModal.show {
+  display: flex !important; }
+  #headerLocationModal.show .modal-dialog,
+  #footerLocationModal.show .modal-dialog {
+    margin: auto; }
 
 #headerLocationModal .modal-content,
 #footerLocationModal .modal-content {
@@ -91,20 +103,305 @@
     max-width: 750px;
     margin: 1.75rem auto; } }
 
-@media screen and (min-width: 576px) {
-  .modal {
-    text-align: center;
-    padding: 0 !important; }
-  .modal:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -4px; }
-  .modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle; } }
+.mainModals.show {
+  display: flex !important; }
+  .mainModals.show .modal-dialog {
+    margin: auto; }
+
+.mainModals .modal-dialog {
+  border: 8px #fbd301 solid;
+  border-radius: unset; }
+  .mainModals .modal-dialog .modal-content {
+    font-family: 'Allgidus';
+    border: unset;
+    border-radius: unset; }
+    .mainModals .modal-dialog .modal-content .modal-header {
+      padding-bottom: 0;
+      border: unset; }
+      .mainModals .modal-dialog .modal-content .modal-header button.close {
+        opacity: 1; }
+        .mainModals .modal-dialog .modal-content .modal-header button.close span {
+          color: #fbd301;
+          font-size: 1.625em; }
+    .mainModals .modal-dialog .modal-content .modal-body h1 {
+      font-size: 1.875em;
+      color: #fbd301; }
+    .mainModals .modal-dialog .modal-content .modal-body p {
+      font-size: 1em;
+      color: #000; }
+    .mainModals .modal-dialog .modal-content .modal-body form {
+      margin-top: 25px; }
+      .mainModals .modal-dialog .modal-content .modal-body form .footer-btn {
+        margin-bottom: 45px; }
+        .mainModals .modal-dialog .modal-content .modal-body form .footer-btn input {
+          width: 295px;
+          font-size: 18px;
+          border-radius: unset;
+          background-color: #000;
+          color: #fff; }
+      .mainModals .modal-dialog .modal-content .modal-body form textarea {
+        resize: none;
+        display: block; }
+      .mainModals .modal-dialog .modal-content .modal-body form input,
+      .mainModals .modal-dialog .modal-content .modal-body form textarea {
+        background-color: #f1f1f1;
+        border: unset;
+        border-radius: unset;
+        padding: 12px 35px;
+        margin-top: 30px;
+        max-width: 305px;
+        margin: 0 auto; }
+        .mainModals .modal-dialog .modal-content .modal-body form input::-webkit-input-placeholder,
+        .mainModals .modal-dialog .modal-content .modal-body form textarea::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          font-family: 'Allgidus';
+          color: #999898;
+          font-size: 0.9375em; }
+        .mainModals .modal-dialog .modal-content .modal-body form input::-moz-placeholder,
+        .mainModals .modal-dialog .modal-content .modal-body form textarea::-moz-placeholder {
+          /* Firefox 19+ */
+          font-family: 'Allgidus';
+          color: #999898;
+          font-size: 0.9375em; }
+        .mainModals .modal-dialog .modal-content .modal-body form input:-ms-input-placeholder,
+        .mainModals .modal-dialog .modal-content .modal-body form textarea:-ms-input-placeholder {
+          /* IE 10+ */
+          font-family: 'Allgidus';
+          color: #999898;
+          font-size: 0.9375em; }
+        .mainModals .modal-dialog .modal-content .modal-body form input:-moz-placeholder,
+        .mainModals .modal-dialog .modal-content .modal-body form textarea:-moz-placeholder {
+          /* Firefox 18- */
+          font-family: 'Allgidus';
+          color: #999898;
+          font-size: 0.9375em; }
+
+.production-modals.show {
+  display: flex !important; }
+  .production-modals.show .modal-dialog {
+    margin: auto; }
+
+.production-modals .modal-dialog {
+  border: 8px #fbd301 solid;
+  border-radius: unset;
+  position: relative; }
+  .production-modals .modal-dialog .modal-content {
+    font-family: 'Allgidus';
+    border: unset;
+    border-radius: unset;
+    padding: 15px 15px 15px 15px; }
+    .production-modals .modal-dialog .modal-content .modal-header {
+      padding-bottom: 0;
+      border: unset; }
+      .production-modals .modal-dialog .modal-content .modal-header h5 {
+        font-size: 28px; }
+      .production-modals .modal-dialog .modal-content .modal-header button.close {
+        position: absolute;
+        top: -10%;
+        right: -9%;
+        opacity: 1; }
+        .production-modals .modal-dialog .modal-content .modal-header button.close span {
+          color: #fbd301;
+          font-size: 1.625em; }
+    .production-modals .modal-dialog .modal-content .modal-body p {
+      font-size: 1em;
+      color: #000; }
+
+@media screen and (max-width: 575px) {
+  .production-modals.show {
+    display: flex !important; }
+  .production-modals .modal-dialog {
+    border: 2px #fbd301 solid;
+    border-radius: unset;
+    position: relative;
+    max-width: 90%;
+    margin: auto; }
+    .production-modals .modal-dialog .modal-content {
+      padding: 5px 5px 5px 5px; }
+      .production-modals .modal-dialog .modal-content .modal-header h5 {
+        font-size: 18px; }
+      .production-modals .modal-dialog .modal-content .modal-header button.close {
+        top: 0%;
+        right: 0%; }
+      .production-modals .modal-dialog .modal-content .modal-body p {
+        font-size: 0.75em; } }
+
+@media screen and (max-width: 575px) {
+  .mainModals {
+    top: 8%; }
+    .mainModals .modal-dialog {
+      border: unset; }
+      .mainModals .modal-dialog .modal-content .modal-body h1 {
+        font-size: 1.125em; }
+      .mainModals .modal-dialog .modal-content .modal-body p {
+        font-size: 0.6875em; }
+      .mainModals .modal-dialog .modal-content .modal-body form .footer-btn button {
+        width: unset;
+        font-size: 15px; }
+      .mainModals .modal-dialog .modal-content .modal-body form input {
+        max-width: unset; } }
+
+.our-products.show {
+  display: flex !important; }
+  .our-products.show .modal-dialog {
+    margin: auto; }
+
+.our-products .modal-dialog {
+  position: relative; }
+  .our-products .modal-dialog .modal-header {
+    border: unset; }
+    .our-products .modal-dialog .modal-header button {
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      opacity: 1; }
+      .our-products .modal-dialog .modal-header button span {
+        font-size: 1.625em;
+        color: #fbd301; }
+  .our-products .modal-dialog .modal-body {
+    padding: 32px 57px 40px 57px; }
+  .our-products .modal-dialog .carousel .carousel-indicators {
+    bottom: -45px; }
+    .our-products .modal-dialog .carousel .carousel-indicators li {
+      background-color: unset; }
+      .our-products .modal-dialog .carousel .carousel-indicators li.active {
+        background-color: unset; }
+      .our-products .modal-dialog .carousel .carousel-indicators li img {
+        max-width: 18px;
+        height: auto; }
+        .our-products .modal-dialog .carousel .carousel-indicators li img:hover {
+          cursor: pointer; }
+  .our-products .modal-dialog .carousel .carousel-item img {
+    max-width: 100px;
+    height: auto; }
+  .our-products .modal-dialog .carousel .carousel-controls {
+    opacity: 1; }
+    .our-products .modal-dialog .carousel .carousel-controls.carousel-control-prev {
+      display: flex;
+      justify-content: flex-start; }
+    .our-products .modal-dialog .carousel .carousel-controls.carousel-control-next {
+      display: flex;
+      justify-content: flex-end; }
+    .our-products .modal-dialog .carousel .carousel-controls i {
+      background-color: #000;
+      color: #fff;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      font-size: 22px; }
+      .our-products .modal-dialog .carousel .carousel-controls i.fa-caret-left {
+        padding-right: 3px; }
+      .our-products .modal-dialog .carousel .carousel-controls i.fa-caret-right {
+        padding-left: 3px; }
+  .our-products .modal-dialog .text-side {
+    text-transform: uppercase;
+    font-family: 'Museo2'; }
+    .our-products .modal-dialog .text-side h1 {
+      font-size: 35px;
+      color: #fbd301;
+      letter-spacing: 2.8px; }
+    .our-products .modal-dialog .text-side .information {
+      position: relative;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .our-products .modal-dialog .text-side .information:before {
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        background-color: #000;
+        top: 0;
+        left: 0; }
+      .our-products .modal-dialog .text-side .information:after {
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        background-color: #fbd301;
+        bottom: 0;
+        left: 0; }
+      .our-products .modal-dialog .text-side .information h2 {
+        font-size: 12px;
+        color: #000;
+        margin-bottom: 25px; }
+      .our-products .modal-dialog .text-side .information ul {
+        margin-bottom: 0px; }
+        .our-products .modal-dialog .text-side .information ul li {
+          font-size: 18px;
+          line-height: 35px; }
+    .our-products .modal-dialog .text-side .add-information {
+      padding-top: 25px; }
+      .our-products .modal-dialog .text-side .add-information ul li {
+        font-size: 10px;
+        line-height: 25px; }
+
+@media screen and (max-width: 575px) {
+  .our-products.show {
+    display: flex; }
+    .our-products.show .modal-dialog {
+      margin: auto; }
+  .our-products .modal-dialog .modal-body {
+    padding: 5px 10px 5px 10px; }
+  .our-products .modal-dialog .carousel .carousel-item img {
+    max-width: 50px; }
+  .our-products .modal-dialog .carousel .carousel-indicators {
+    display: none; }
+  .our-products .modal-dialog .carousel .carousel-controls i {
+    font-size: 24px; }
+  .our-products .modal-dialog .text-side {
+    margin-top: 50px; }
+    .our-products .modal-dialog .text-side h1 {
+      font-size: 22px;
+      text-align: center; }
+    .our-products .modal-dialog .text-side .information {
+      padding-top: 7px;
+      padding-bottom: 7px; }
+      .our-products .modal-dialog .text-side .information h2 {
+        margin-bottom: 10px; }
+      .our-products .modal-dialog .text-side .information ul li {
+        font-size: 12px !important;
+        line-height: 25px; }
+    .our-products .modal-dialog .text-side .add-information {
+      padding-top: 10px; }
+      .our-products .modal-dialog .text-side .add-information ul li {
+        line-height: 18px; }
+  .our-products .modal-dialog .modal-header button {
+    top: 1% !important;
+    right: 2% !important; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .our-products .modal-dialog .carousel .carousel-indicators {
+    display: none; }
+  .our-products .modal-dialog .text-side {
+    margin-top: 50px; }
+    .our-products .modal-dialog .text-side h1 {
+      font-size: 30px; }
+    .our-products .modal-dialog .text-side .information ul li {
+      font-size: 14px !important; }
+  .our-products .modal-dialog .modal-header button {
+    top: 0% !important;
+    right: 2% !important; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .our-products .modal-dialog {
+    width: 100%;
+    max-width: 700px; }
+    .our-products .modal-dialog .modal-header button {
+      top: -10% !important;
+      right: -2% !important; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .our-products .modal-dialog {
+    width: 100%;
+    max-width: 900px; }
+    .our-products .modal-dialog .modal-header button {
+      top: -10% !important;
+      right: -2% !important; } }
+
+@media screen and (min-width: 1200px) {
+  .our-products .modal-dialog {
+    width: 100%;
+    max-width: 957px; } }
 
 nav.navbar {
   padding-top: 21px;
@@ -144,15 +441,12 @@ header {
   background-position: center;
   min-height: 950px;
   position: relative; }
-  header canvas#space {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; }
   header .information {
     font-family: 'Allgidus';
     z-index: 999; }
+    header .information__brand img {
+      max-width: 183px;
+      height: auto; }
     header .information__location {
       z-index: 999; }
       header .information__location p {
@@ -511,23 +805,30 @@ header {
     padding-bottom: 75px; }
     .our-production #carouselProduction .carousel-item-next,
     .our-production #carouselProduction .carousel-item-prev,
-    .our-production #carouselProduction .carousel-item.active {
+    .our-production #carouselProduction .carousel-item {
       padding-top: 10px;
       padding-bottom: 10px; }
     .our-production #carouselProduction .carousel-inner .carousel-item div {
       padding: 45px 14px 37px 14px;
       max-width: 227px;
-      box-shadow: 0 0 12px rgba(244, 239, 239, 0.73); }
+      box-shadow: 0 0 12px rgba(244, 239, 239, 0.73);
+      min-height: 379px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
       .our-production #carouselProduction .carousel-inner .carousel-item div img {
-        max-width: 65px;
+        max-width: 100px;
         height: auto;
+        max-height: 155px;
         padding-bottom: 25px; }
       .our-production #carouselProduction .carousel-inner .carousel-item div p {
         font-family: 'Allgidus';
         font-size: 15px;
         color: #130c04;
         font-weight: bold;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        min-height: 66px; }
       .our-production #carouselProduction .carousel-inner .carousel-item div button {
         font-family: 'RoadRadio-Bold';
         font-size: 15px;
@@ -587,29 +888,33 @@ header {
     .our-production .carousel-inner .active,
     .our-production .carousel-inner .active + .carousel-item,
     .our-production .carousel-inner .active + .carousel-item + .carousel-item {
-      display: block; }
-    .our-production .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .our-production .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-    .our-production .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      display: block;
+      transition: all 0.5s ease-in-out; }
+    .our-production .carousel-inner .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .our-production .carousel-inner .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-production-item,
+    .our-production .carousel-inner .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-production-item + .carousel-production-item {
       transition: none; }
     .our-production .carousel-inner .carousel-item-next,
     .our-production .carousel-inner .carousel-item-prev {
       position: relative;
       transform: translate3d(0, 0, 0); }
-    .our-production .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    .our-production .carousel-inner .active.carousel-production-item + .carousel-production-item + .carousel-production-item + .carousel-production-item {
       position: absolute;
       top: 0;
       right: -25%;
       z-index: -1;
       display: block;
-      visibility: visible; }
+      display: none;
+      visibility: visible;
+      transition: all 1s ease-in-out; }
     .our-production .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .our-production .carousel-item-next.carousel-item-left + .carousel-item,
     .our-production .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
     .our-production .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
       position: relative;
       transform: translate3d(-100%, 0, 0);
-      visibility: visible; }
+      visibility: visible;
+      /*transition: all 4s ease-in-out;*/ }
     .our-production .carousel-inner .carousel-item-prev.carousel-item-right {
       position: absolute;
       top: 0;
@@ -625,7 +930,8 @@ header {
       transform: translate3d(100%, 0, 0);
       visibility: visible;
       display: block;
-      visibility: visible; } }
+      visibility: visible;
+      /*transition: all 4s ease-in-out;*/ } }
 
 .our-advantages {
   background: url("../img/our-advantages-bg.jpg") no-repeat;
@@ -862,6 +1168,14 @@ header {
       background: url("../img/cruise-bg.png") no-repeat;
       background-size: contain;
       background-position: center; }
+  .transportation p {
+    font-family: 'Allgidus';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    color: #7a7a7a;
+    padding-top: 20px;
+    padding-bottom: 30px; }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .transportation {
@@ -880,6 +1194,8 @@ header {
     padding-bottom: 60px; }
     .transportation h1 {
       margin-bottom: 15px; }
+    .transportation p {
+      font-size: 13px; }
     .transportation__item {
       padding-top: 60px; }
       .transportation__item img {
@@ -957,7 +1273,8 @@ header {
     .certificate .carousel-inner .active,
     .certificate .carousel-inner .active + .carousel-item,
     .certificate .carousel-inner .active + .carousel-item + .carousel-item {
-      display: block; }
+      display: block;
+      transition: all 0.5s ease-in-out; }
     .certificate .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
     .certificate .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
     .certificate .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
@@ -972,14 +1289,17 @@ header {
       right: -25%;
       z-index: -1;
       display: block;
-      visibility: visible; }
+      display: none;
+      visibility: visible;
+      transition: all 1s ease-in-out; }
     .certificate .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .certificate .carousel-item-next.carousel-item-left + .carousel-item,
     .certificate .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
     .certificate .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
       position: relative;
       transform: translate3d(-100%, 0, 0);
-      visibility: visible; }
+      visibility: visible;
+      /*transition: all 4s ease-in-out;*/ }
     .certificate .carousel-inner .carousel-item-prev.carousel-item-right {
       position: absolute;
       top: 0;
@@ -995,7 +1315,8 @@ header {
       transform: translate3d(100%, 0, 0);
       visibility: visible;
       display: block;
-      visibility: visible; } }
+      visibility: visible;
+      /*transition: all 4s ease-in-out;*/ } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .certificate #carouselCertificate .carousel-inner .carousel-item div img {
@@ -1174,7 +1495,8 @@ header {
       .faq #accordion .card .card-header button {
         color: #fff;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        font-size: 14px; }
         .faq #accordion .card .card-header button:hover {
           text-decoration: none; }
         .faq #accordion .card .card-header button i {
@@ -1189,7 +1511,13 @@ header {
     .faq #accordion .card .card-body {
       background-color: unset; }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .faq #accordion .card .card-header button {
+    font-size: 10.2px; } }
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .faq #accordion .card .card-header button {
+    font-size: 9px; }
   .faq {
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -1226,7 +1554,7 @@ header {
         padding: 0;
         position: relative; }
         .faq #accordion .card .card-header button {
-          font-size: 14px; }
+          font-size: 9px; }
           .faq #accordion .card .card-header button i {
             background-color: #000;
             width: 23px;
@@ -1249,26 +1577,31 @@ footer {
   footer .footer__qrcode img {
     max-width: 115px;
     height: auto; }
+  footer .footer__tm h2 {
+    font-family: 'Allgidus';
+    font-size: 28px;
+    font-weight: bold;
+    color: #000; }
   footer .footer__social {
     font-family: 'Allgidus'; }
     footer .footer__social h1 {
-      font-size: 40px;
+      font-size: 28px;
       font-weight: bold;
       color: #000; }
     footer .footer__social p {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       line-height: 35px;
       margin-bottom: 0;
       color: #b1b1b1; }
     footer .footer__social__map {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       line-height: 35px;
       text-decoration: underline;
       color: #ff813d; }
     footer .footer__social__phone {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       line-height: 35px;
       margin-bottom: 0;
@@ -1325,6 +1658,8 @@ footer {
     padding-top: 30px; }
     footer .footer__brand img {
       max-width: 100px; }
+    footer .footer__tm img {
+      max-width: 100px; }
     footer .footer__qrcode img {
       max-width: 80px; }
     footer .footer__social {
@@ -1348,6 +1683,8 @@ footer {
   footer {
     padding-top: 30px; }
     footer .footer__brand img {
+      max-width: 100px; }
+    footer .footer__tm img {
       max-width: 100px; }
     footer .footer__qrcode img {
       max-width: 80px; }
@@ -1376,6 +1713,8 @@ footer {
       max-width: 100px; }
     footer .footer__qrcode img {
       max-width: 80px; }
+    footer .footer__tm img {
+      max-width: 100px; }
     footer .footer__social {
       margin-top: 25px;
       text-align: center; }

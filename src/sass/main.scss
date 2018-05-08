@@ -1,13 +1,13 @@
 // ===== Base Folder====== //
 @import 'base/_typography';
 // ======================= //
+// ===== Helpers Folder====== //
+@import 'helpers/_functions';
+@import 'helpers/_mixins';
 // ===== Components Folder====== //
 @import 'components/_buttons';
 @import 'components/_modals';
 // ======================= //
-// ===== Helpers Folder====== //
-@import 'helpers/_functions';
-@import 'helpers/_mixins';
 // ======================= //
 // ===== Layout Folder====== //
 @import 'layout/_navigation';
